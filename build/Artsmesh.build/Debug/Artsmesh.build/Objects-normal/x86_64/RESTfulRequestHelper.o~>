@@ -1,0 +1,2 @@
+/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m:119: warning: incomplete implementation of class 'RESTfulRequestHelper'
+/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m:119: warning: method definition for '+sendPOSTRequest:textData:' not found

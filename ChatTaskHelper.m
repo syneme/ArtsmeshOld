@@ -1,0 +1,1 @@
+////  ChatTaskHelper.m//  Artsmesh////  Created by WANG Hailei on 7/10/10.//  Copyright 2010 Farefore Co. All rights reserved.//#import "ChatTaskHelper.h"@implementation ChatTaskHelper+ (void) launchiChat {		[[NSWorkspace sharedWorkspace] launchApplication:@"iChat"];}@end

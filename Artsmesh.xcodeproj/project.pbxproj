@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
+		770B37ED0679A11B001EADE2 /* Artsmesh_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* Artsmesh_DataModel.xcdatamodel */; };
+		77C8280E06725ACE000B614F /* Artsmesh_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9D3D06FB11F9D34500913793 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06E711F9D34500913793 /* ASIFormDataRequest.m */; };
+		9D3D06FC11F9D34500913793 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06E911F9D34500913793 /* ASIHTTPRequest.m */; };
+		9D3D06FD11F9D34500913793 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06ED11F9D34500913793 /* ASIInputStream.m */; };
+		9D3D06FE11F9D34500913793 /* RESTfulPostData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06F111F9D34500913793 /* RESTfulPostData.m */; };
+		9D3D06FF11F9D34500913793 /* RESTfulRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06F311F9D34500913793 /* RESTfulRequestHelper.m */; };
+		9D3D070011F9D34500913793 /* JackTripChanelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06F611F9D34500913793 /* JackTripChanelInfo.m */; };
+		9D3D070111F9D34500913793 /* JackTripTaskContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06F811F9D34500913793 /* JackTripTaskContainer.m */; };
+		9D3D070211F9D34500913793 /* JackTripTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3D06FA11F9D34500913793 /* JackTripTaskHelper.m */; };
+		9D3D070611F9D35900913793 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070511F9D35900913793 /* CoreServices.framework */; };
+		9D3D070A11F9D36C00913793 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070911F9D36C00913793 /* SystemConfiguration.framework */; };
+		9D3D070C11F9D37300913793 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070B11F9D37300913793 /* libz.1.2.3.dylib */; };
+		F242038811E84CFE00534C7A /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F242038711E84CFE00534C7A /* Account.m */; };
+		F296CDAB11F4A5B300B6A13F /* ChatTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F296CDAA11F4A5B300B6A13F /* ChatTaskHelper.m */; };
+		F2A1B88911EEC5AC00DC5BD0 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1B88811EEC5AC00DC5BD0 /* Contacts.m */; };
+		F2DBD2EC11F52AA6000C61ED /* iChat.icns in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2E711F52AA6000C61ED /* iChat.icns */; };
+		F2DBD2ED11F52AA6000C61ED /* status-available-flat-etched.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2E811F52AA6000C61ED /* status-available-flat-etched.tif */; };
+		F2DBD2EE11F52AA6000C61ED /* status-away-flat-etched.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2E911F52AA6000C61ED /* status-away-flat-etched.tif */; };
+		F2DBD2EF11F52AA6000C61ED /* status-idle-flat-etched.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2EA11F52AA6000C61ED /* status-idle-flat-etched.tif */; };
+		F2DBD2F011F52AA6000C61ED /* status-invisible-flat-etched.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2EB11F52AA6000C61ED /* status-invisible-flat-etched.tif */; };
+		F2EE524911E59ECF003C2DEE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EE524811E59ECF003C2DEE /* AddressBook.framework */; };
+		F2EE524B11E59ECF003C2DEE /* InstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EE524A11E59ECF003C2DEE /* InstantMessage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Artsmesh_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artsmesh_Prefix.pch; sourceTree = "<group>"; };
+		770B37EC0679A11B001EADE2 /* Artsmesh_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Artsmesh_DataModel.xcdatamodel; sourceTree = "<group>"; };
+		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		77C8280B06725ACE000B614F /* Artsmesh_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artsmesh_AppDelegate.h; sourceTree = "<group>"; };
+		77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artsmesh_AppDelegate.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Artsmesh-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "Artsmesh-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Artsmesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artsmesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3D06E511F9D34500913793 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		9D3D06E611F9D34500913793 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		9D3D06E711F9D34500913793 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		9D3D06E811F9D34500913793 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		9D3D06E911F9D34500913793 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		9D3D06EA11F9D34500913793 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		9D3D06EB11F9D34500913793 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		9D3D06EC11F9D34500913793 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		9D3D06ED11F9D34500913793 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		9D3D06EE11F9D34500913793 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		9D3D06F011F9D34500913793 /* RESTfulPostData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulPostData.h; sourceTree = "<group>"; };
+		9D3D06F111F9D34500913793 /* RESTfulPostData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTfulPostData.m; sourceTree = "<group>"; };
+		9D3D06F211F9D34500913793 /* RESTfulRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTfulRequestHelper.h; sourceTree = "<group>"; };
+		9D3D06F311F9D34500913793 /* RESTfulRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTfulRequestHelper.m; sourceTree = "<group>"; };
+		9D3D06F511F9D34500913793 /* JackTripChanelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JackTripChanelInfo.h; sourceTree = "<group>"; };
+		9D3D06F611F9D34500913793 /* JackTripChanelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JackTripChanelInfo.m; sourceTree = "<group>"; };
+		9D3D06F711F9D34500913793 /* JackTripTaskContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JackTripTaskContainer.h; sourceTree = "<group>"; };
+		9D3D06F811F9D34500913793 /* JackTripTaskContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JackTripTaskContainer.m; sourceTree = "<group>"; };
+		9D3D06F911F9D34500913793 /* JackTripTaskHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JackTripTaskHelper.h; sourceTree = "<group>"; };
+		9D3D06FA11F9D34500913793 /* JackTripTaskHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JackTripTaskHelper.m; sourceTree = "<group>"; };
+		9D3D070511F9D35900913793 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		9D3D070911F9D36C00913793 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9D3D070B11F9D37300913793 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		F242038611E84CFE00534C7A /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		F242038711E84CFE00534C7A /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		F296CDA911F4A5B300B6A13F /* ChatTaskHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTaskHelper.h; sourceTree = "<group>"; };
+		F296CDAA11F4A5B300B6A13F /* ChatTaskHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTaskHelper.m; sourceTree = "<group>"; };
+		F2A1B88711EEC5AC00DC5BD0 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		F2A1B88811EEC5AC00DC5BD0 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
+		F2DBD2E711F52AA6000C61ED /* iChat.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iChat.icns; sourceTree = "<group>"; };
+		F2DBD2E811F52AA6000C61ED /* status-available-flat-etched.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status-available-flat-etched.tif"; sourceTree = "<group>"; };
+		F2DBD2E911F52AA6000C61ED /* status-away-flat-etched.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status-away-flat-etched.tif"; sourceTree = "<group>"; };
+		F2DBD2EA11F52AA6000C61ED /* status-idle-flat-etched.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status-idle-flat-etched.tif"; sourceTree = "<group>"; };
+		F2DBD2EB11F52AA6000C61ED /* status-invisible-flat-etched.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status-invisible-flat-etched.tif"; sourceTree = "<group>"; };
+		F2EE524811E59ECF003C2DEE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		F2EE524A11E59ECF003C2DEE /* InstantMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstantMessage.framework; path = System/Library/Frameworks/InstantMessage.framework; sourceTree = SDKROOT; };
+		F2EE525111E59F50003C2DEE /* iChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iChat.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				F2EE524911E59ECF003C2DEE /* AddressBook.framework in Frameworks */,
+				F2EE524B11E59ECF003C2DEE /* InstantMessage.framework in Frameworks */,
+				9D3D070611F9D35900913793 /* CoreServices.framework in Frameworks */,
+				9D3D070A11F9D36C00913793 /* SystemConfiguration.framework in Frameworks */,
+				9D3D070C11F9D37300913793 /* libz.1.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D3D06E411F9D34500913793 /* ASIHTTPRequest */,
+				9D3D06EF11F9D34500913793 /* RESTfulCommunication */,
+				9D3D06F411F9D34500913793 /* TaskCommunication */,
+				77C8280B06725ACE000B614F /* Artsmesh_AppDelegate.h */,
+				77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */,
+				F242038611E84CFE00534C7A /* Account.h */,
+				F242038711E84CFE00534C7A /* Account.m */,
+				F2A1B88711EEC5AC00DC5BD0 /* Contacts.h */,
+				F2A1B88811EEC5AC00DC5BD0 /* Contacts.m */,
+				F296CDA911F4A5B300B6A13F /* ChatTaskHelper.h */,
+				F296CDAA11F4A5B300B6A13F /* ChatTaskHelper.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				9D3D070511F9D35900913793 /* CoreServices.framework */,
+				9D3D070911F9D36C00913793 /* SystemConfiguration.framework */,
+				9D3D070B11F9D37300913793 /* libz.1.2.3.dylib */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C82804067257F0000B614F /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Artsmesh.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Artsmesh */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				F2DBD2E511F52A44000C61ED /* Media */,
+				7756732906782D8800D1FEB8 /* Models */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Artsmesh;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE525111E59F50003C2DEE /* iChat.h */,
+				32CA4F630368D1EE00C91783 /* Artsmesh_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Artsmesh-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				F2EE524811E59ECF003C2DEE /* AddressBook.framework */,
+				F2EE524A11E59ECF003C2DEE /* InstantMessage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7756732906782D8800D1FEB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				770B37EC0679A11B001EADE2 /* Artsmesh_DataModel.xcdatamodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9D3D06E411F9D34500913793 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				9D3D06E511F9D34500913793 /* ASICacheDelegate.h */,
+				9D3D06E611F9D34500913793 /* ASIFormDataRequest.h */,
+				9D3D06E711F9D34500913793 /* ASIFormDataRequest.m */,
+				9D3D06E811F9D34500913793 /* ASIHTTPRequest.h */,
+				9D3D06E911F9D34500913793 /* ASIHTTPRequest.m */,
+				9D3D06EA11F9D34500913793 /* ASIHTTPRequestConfig.h */,
+				9D3D06EB11F9D34500913793 /* ASIHTTPRequestDelegate.h */,
+				9D3D06EC11F9D34500913793 /* ASIInputStream.h */,
+				9D3D06ED11F9D34500913793 /* ASIInputStream.m */,
+				9D3D06EE11F9D34500913793 /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		9D3D06EF11F9D34500913793 /* RESTfulCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				9D3D06F011F9D34500913793 /* RESTfulPostData.h */,
+				9D3D06F111F9D34500913793 /* RESTfulPostData.m */,
+				9D3D06F211F9D34500913793 /* RESTfulRequestHelper.h */,
+				9D3D06F311F9D34500913793 /* RESTfulRequestHelper.m */,
+			);
+			path = RESTfulCommunication;
+			sourceTree = "<group>";
+		};
+		9D3D06F411F9D34500913793 /* TaskCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				9D3D06F511F9D34500913793 /* JackTripChanelInfo.h */,
+				9D3D06F611F9D34500913793 /* JackTripChanelInfo.m */,
+				9D3D06F711F9D34500913793 /* JackTripTaskContainer.h */,
+				9D3D06F811F9D34500913793 /* JackTripTaskContainer.m */,
+				9D3D06F911F9D34500913793 /* JackTripTaskHelper.h */,
+				9D3D06FA11F9D34500913793 /* JackTripTaskHelper.m */,
+			);
+			path = TaskCommunication;
+			sourceTree = "<group>";
+		};
+		F2DBD2E511F52A44000C61ED /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBD30411F52D9B000C61ED /* Audio */,
+				F2DBD2E611F52A4D000C61ED /* Image */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		F2DBD2E611F52A4D000C61ED /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBD2E711F52AA6000C61ED /* iChat.icns */,
+				F2DBD2E811F52AA6000C61ED /* status-available-flat-etched.tif */,
+				F2DBD2E911F52AA6000C61ED /* status-away-flat-etched.tif */,
+				F2DBD2EA11F52AA6000C61ED /* status-idle-flat-etched.tif */,
+				F2DBD2EB11F52AA6000C61ED /* status-invisible-flat-etched.tif */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		F2DBD30411F52D9B000C61ED /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Artsmesh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "Artsmesh" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artsmesh;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Artsmesh;
+			productReference = 8D1107320486CEB800E47090 /* Artsmesh.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Artsmesh" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Artsmesh */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Artsmesh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */,
+				F2DBD2EC11F52AA6000C61ED /* iChat.icns in Resources */,
+				F2DBD2ED11F52AA6000C61ED /* status-available-flat-etched.tif in Resources */,
+				F2DBD2EE11F52AA6000C61ED /* status-away-flat-etched.tif in Resources */,
+				F2DBD2EF11F52AA6000C61ED /* status-idle-flat-etched.tif in Resources */,
+				F2DBD2F011F52AA6000C61ED /* status-invisible-flat-etched.tif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				77C8280E06725ACE000B614F /* Artsmesh_AppDelegate.m in Sources */,
+				770B37ED0679A11B001EADE2 /* Artsmesh_DataModel.xcdatamodel in Sources */,
+				F242038811E84CFE00534C7A /* Account.m in Sources */,
+				F2A1B88911EEC5AC00DC5BD0 /* Contacts.m in Sources */,
+				F296CDAB11F4A5B300B6A13F /* ChatTaskHelper.m in Sources */,
+				9D3D06FB11F9D34500913793 /* ASIFormDataRequest.m in Sources */,
+				9D3D06FC11F9D34500913793 /* ASIHTTPRequest.m in Sources */,
+				9D3D06FD11F9D34500913793 /* ASIInputStream.m in Sources */,
+				9D3D06FE11F9D34500913793 /* RESTfulPostData.m in Sources */,
+				9D3D06FF11F9D34500913793 /* RESTfulRequestHelper.m in Sources */,
+				9D3D070011F9D34500913793 /* JackTripChanelInfo.m in Sources */,
+				9D3D070111F9D34500913793 /* JackTripTaskContainer.m in Sources */,
+				9D3D070211F9D34500913793 /* JackTripTaskHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F7446970DB6B7EA00F9684A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7446980DB6B7EA00F9684A /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26FC0A850875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Artsmesh_Prefix.pch;
+				INFOPLIST_FILE = "Artsmesh-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Artsmesh;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26FC0A860875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Artsmesh_Prefix.pch;
+				INFOPLIST_FILE = "Artsmesh-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Artsmesh;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		26FC0A890875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		26FC0A8A0875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "Artsmesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A850875C7B200E6366F /* Debug */,
+				26FC0A860875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Artsmesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A890875C7B200E6366F /* Debug */,
+				26FC0A8A0875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

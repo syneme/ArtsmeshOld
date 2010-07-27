@@ -1,0 +1,1 @@
+//// Prefix header for all source files of the 'Artsmesh' target in the 'Artsmesh' project//#ifdef __OBJC__    #import <Cocoa/Cocoa.h>#endif
