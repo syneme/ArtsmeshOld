@@ -64,7 +64,7 @@
 			PBXWorkspaceStateSaveDate = 301288698;
 		};
 		perUserProjectItems = {
-			F27A27DE11F54D0500C07A8F /* PBXTextBookmark */ = F27A27DE11F54D0500C07A8F /* PBXTextBookmark */;
+			F27A27DE11F54D0500C07A8F = F27A27DE11F54D0500C07A8F /* PBXTextBookmark */;
 			F296910911E8D20D002B9019 = F296910911E8D20D002B9019 /* PBXTextBookmark */;
 			F296CDCF11F4AADC00B6A13F = F296CDCF11F4AADC00B6A13F /* PBXTextBookmark */;
 			F296CDD211F4AADC00B6A13F = F296CDD211F4AADC00B6A13F /* PBXTextBookmark */;
@@ -77,7 +77,7 @@
 			F2B2816011F54CE900870BA6 = F2B2816011F54CE900870BA6 /* PBXTextBookmark */;
 			F2B2816411F54CE900870BA6 = F2B2816411F54CE900870BA6 /* PBXTextBookmark */;
 			F2DBD2FB11F52C09000C61ED = F2DBD2FB11F52C09000C61ED /* PBXBookmark */;
-			F2DBD2FC11F52C09000C61ED = F2DBD2FC11F52C09000C61ED /* XDModelBookmark */;
+			F2DBD2FC11F52C09000C61ED = F2DBD2FC11F52C09000C61ED /* PBXBookmark */;
 			F2DBD30511F53421000C61ED = F2DBD30511F53421000C61ED /* PBXTextBookmark */;
 			F2DBD30611F53421000C61ED = F2DBD30611F53421000C61ED /* PBXBookmark */;
 			F2DBD30711F53421000C61ED = F2DBD30711F53421000C61ED /* PBXBookmark */;
@@ -267,20 +267,6 @@
 			F2EE522E11E59E29003C2DEE /* Artsmesh */,
 		);
 	};
-	9D877E3D11F322A000A7A63B /* JackTaskHelper.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {922, 657}}";
-			sepNavSelRange = "{399, 0}";
-			sepNavVisRange = "{0, 555}";
-		};
-	};
-	9D877E3E11F322A000A7A63B /* JackTaskHelper.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {922, 1729}}";
-			sepNavSelRange = "{551, 0}";
-			sepNavVisRange = "{200, 786}";
-		};
-	};
 	F242038611E84CFE00534C7A /* Account.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {922, 634}}";
@@ -298,7 +284,6 @@
 	};
 	F27A27DE11F54D0500C07A8F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9D877E3E11F322A000A7A63B /* JackTaskHelper.m */;
 		name = "JackTaskHelper.m: 27";
 		rLen = 0;
 		rLoc = 551;
@@ -417,7 +402,6 @@
 	};
 	F2B2815F11F54CE900870BA6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9D877E3D11F322A000A7A63B /* JackTaskHelper.h */;
 		name = "JackTaskHelper.h: 21";
 		rLen = 0;
 		rLoc = 399;
@@ -427,7 +411,6 @@
 	};
 	F2B2816011F54CE900870BA6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9D877E3E11F322A000A7A63B /* JackTaskHelper.m */;
 		name = "JackTaskHelper.m: 31";
 		rLen = 0;
 		rLoc = 667;
@@ -437,7 +420,6 @@
 	};
 	F2B2816411F54CE900870BA6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 9D877E3E11F322A000A7A63B /* JackTaskHelper.m */;
 		name = "JackTaskHelper.m: 27";
 		rLen = 0;
 		rLoc = 551;
@@ -449,10 +431,9 @@
 		isa = PBXBookmark;
 		fRef = F2DBD2E711F52AA6000C61ED /* iChat.icns */;
 	};
-	F2DBD2FC11F52C09000C61ED /* XDModelBookmark */ = {
-		isa = XDModelBookmark;
+	F2DBD2FC11F52C09000C61ED /* PBXBookmark */ = {
+		isa = PBXBookmark;
 		fRef = 770B37EC0679A11B001EADE2 /* Artsmesh_DataModel.xcdatamodel */;
-		fallbackIsa = PBXBookmark;
 	};
 	F2DBD30511F53421000C61ED /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
