@@ -19,14 +19,14 @@ NSInteger const JACK_TRIP_BASE_PORT=4464;
 	NSXMLDocument *xmlDoc;
 	NSError *err=nil;
 	xmlDoc=[[NSXMLDocument alloc] initWithXMLString:xmlText 
-											options:(NSXMLNodePreserveWhitespace|NSXMLNodePreserveCDATA)
-											  error:&err];
-    
-    if (xmlDoc == nil) {
-        xmlDoc = [[NSXMLDocument alloc] initWithXMLString:xmlText
-												  options:NSXMLDocumentTidyXML
-													error:&err];
-    }
+						options:(NSXMLNodePreserveWhitespace|NSXMLNodePreserveCDATA)
+						  error:&err];
+	
+	if (xmlDoc == nil) {
+		xmlDoc = [[NSXMLDocument alloc] initWithXMLString:xmlText
+							  options:NSXMLDocumentTidyXML
+							    error:&err];
+	}
 	
 	if(err!=nil){
 		return nil;
@@ -34,7 +34,7 @@ NSInteger const JACK_TRIP_BASE_PORT=4464;
 	
 	NSXMLElement *chanelNode;
 	NSArray *nodes = [xmlDoc nodesForXPath:@"./chanels/chanel"
-									 error:&err];
+					 error:&err];
 	NSMutableArray *jackChanelList=[NSMutableArray arrayWithCapacity:[nodes count]];
 	
 	if ([nodes count] > 0 ) {
