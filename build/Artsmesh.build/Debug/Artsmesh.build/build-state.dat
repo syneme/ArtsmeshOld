@@ -378,6 +378,78 @@ t1278568105
 s247
 i<Cocoa/Cocoa.h>
 
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASICacheDelegate.h
+c000000004C42FD5A000000000000085E
+t1279458650
+s2142
+i<Foundation/Foundation.h>
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIFormDataRequest.h
+c000000004C42FD5A0000000000000A6D
+t1279458650
+s2669
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+i"ASIHTTPRequestConfig.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIFormDataRequest.m
+c000000004C42FD5A0000000000002B52
+t1279458650
+s11090
+i"ASIFormDataRequest.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequest.h
+c000000004C42FD5A0000000000009121
+t1279458650
+s37153
+i<Foundation/Foundation.h>
+i<CFNetwork/CFNetwork.h>
+i<stdio.h>
+i"ASIHTTPRequestConfig.h"
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+i"ASICacheDelegate.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequest.m
+c000000004C42FD5A00000000000251C4
+t1279458650
+s152004
+i"ASIHTTPRequest.h"
+i<zlib.h>
+i"Reachability.h"
+i"ASIAuthenticationDialog.h"
+i<MobileCoreServices/MobileCoreServices.h>
+i<SystemConfiguration/SystemConfiguration.h>
+i"ASIInputStream.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequestConfig.h
+c000000004C42FD5A00000000000003B0
+t1279458650
+s944
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequestDelegate.h
+c000000004C42FD5A0000000000000599
+t1279458650
+s1433
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIInputStream.h
+c000000004C42FD5A00000000000003C9
+t1279458650
+s969
+i<Foundation/Foundation.h>
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIInputStream.m
+c000000004C42FD5A0000000000000BF0
+t1279458650
+s3056
+i"ASIInputStream.h"
+i"ASIHTTPRequest.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIProgressDelegate.h
+c000000004C42FD5A0000000000000678
+t1279458650
+s1656
+
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Account.h
 c000000004C402072000000000000017D
 t1279271026
@@ -393,22 +465,25 @@ s3697
 i"Account.h"
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.h
-c000000004C4470EA000000000000040E
-t1279553770
-s1038
+c000000004C4FD30D000000000000073F
+t1280299789
+s1855
 i<Cocoa/Cocoa.h>
-i"JackTaskHelper.h"
+i"JackTripTaskContainer.h"
+i"RESTfulRequestHelper.h"
 i"ChatTaskHelper.h"
+i<InstantMessage/IMService.h>
+i<AddressBook/AddressBook.h>
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m
-c000000004C44F45D0000000000001D3D
-t1279587421
-s7485
+c000000004C4FD36800000000000039D7
+t1280299880
+s14807
 i"Artsmesh_AppDelegate.h"
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel
-c000000004C3574F80000000000000088
-t1278571768
+c000000004C498B860000000000000088
+t1279888262
 s136
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_Prefix.pch
@@ -424,8 +499,8 @@ s228
 i<Cocoa/Cocoa.h>
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/ChatTaskHelper.m
-c000000004C446F8B0000000000000123
-t1279553419
+c000000004C446F8C0000000000000123
+t1279553420
 s291
 i"ChatTaskHelper.h"
 
@@ -450,9 +525,9 @@ i<Cocoa/Cocoa.h>
 i<InstantMessage/IMService.h>
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contacts.m
-c000000004C4027360000000000000AB6
-t1279272758
-s2742
+c000000004C4EE0ED0000000000000B09
+t1280237805
+s2825
 i"Contacts.h"
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/InfoPlist.strings
@@ -461,9 +536,9 @@ t1278568106
 s90
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/MainMenu.xib
-c000000004C45159E000000000003BE19
-t1279595934
-s245273
+c000000004C4FD3BD0000000000033852
+t1280299965
+s211026
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/JackTaskHelper.h
 c000000004C441E71000000000000022B
@@ -477,41 +552,138 @@ t1279595880
 s1764
 i"JackTaskHelper.h"
 
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulPostData.h
+c000000004C47F042000000000000013F
+t1279782978
+s319
+i<Cocoa/Cocoa.h>
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulPostData.m
+c000000004C4AB58E000000000000013F
+t1279964558
+s319
+i"RESTfulPostData.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.h
+c000000004C4AE5E8000000000000040E
+t1279976936
+s1038
+i<Cocoa/Cocoa.h>
+i"RESTfulPostData.h"
+i"ASIHTTPRequest.h"
+i"ASIFormDataRequest.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m
+c000000004C4D99080000000000000AD3
+t1280153864
+s2771
+i"RESTfulRequestHelper.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripChanelInfo.h
+c000000004C4819EC00000000000001B2
+t1279793644
+s434
+i<Cocoa/Cocoa.h>
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripChanelInfo.m
+c000000004C4EAA6A000000000000058C
+t1280223850
+s1420
+i"JackTripChanelInfo.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskContainer.h
+c000000004C4ABBFA0000000000000295
+t1279966202
+s661
+i<Cocoa/Cocoa.h>
+i"JackTripTaskHelper.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskContainer.m
+c000000004C4ABC020000000000000349
+t1279966210
+s841
+i"JackTripTaskContainer.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskHelper.h
+c000000004C498D5A00000000000001F6
+t1279888730
+s502
+i<Cocoa/Cocoa.h>
+i"JackTripChanelInfo.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskHelper.m
+c000000004C4E9EF30000000000000A61
+t1280220915
+s2657
+i"JackTripTaskHelper.h"
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIFormDataRequest.o
+t1279892424
+s51144
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIHTTPRequest.o
+t1279892424
+s429132
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIInputStream.o
+t1279892424
+s31276
+
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Account.o
-t1279553936
-s18928
+t1279892386
+s18960
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh.LinkFileList
-c000000004C44737700000000000002EF
-t1279554423
-s751
+c000000004C499BC8000000000000078D
+t1279892424
+s1933
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh_AppDelegate.o
-t1279587464
-s51772
+t1279977148
+s66576
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ChatTaskHelper.o
-t1279553773
-s8028
+t1279892386
+s8060
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Contact.o
 t1279175322
 s11960
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Contacts.o
-t1279545225
-s17644
+t1279892386
+s17676
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTaskHelper.o
 t1279595907
 s14840
 
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripChanelInfo.o
+t1279977148
+s17948
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskContainer.o
+t1279966210
+s17208
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskHelper.o
+t1279892424
+s18284
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulPostData.o
+t1279964560
+s10472
+
+N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulRequestHelper.o
+t1279977146
+s22752
+
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/main.o
-t1279545224
-s5016
+t1279892386
+s5048
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app
-t1279595940
+t1279977148
 s102
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Info.plist
@@ -519,15 +691,15 @@ t1278744708
 s889
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/MacOS/Artsmesh
-t1279595908
-s43048
+t1279977148
+s314648
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/PkgInfo
 t1278744708
 s8
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/Artsmesh_DataModel.mom
-t1278744718
+t1279892382
 s1470
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/InfoPlist.strings
@@ -535,15 +707,15 @@ t1278744708
 s90
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/MainMenu.nib
-t1279595940
-s51061
+t1279976460
+s55086
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/iChat.icns
-t1279587277
+t1279587278
 s203940
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/status-available-flat-etched.tif
-t1279587277
+t1279587278
 s806
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/status-away-flat-etched.tif
@@ -559,8 +731,8 @@ t1279587278
 s736
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/iChat.icns
-c000000004A6FDDAB0000000000031CA4
-t1248845227
+c000000004A6FDDAC0000000000031CA4
+t1248845228
 s203940
 
 N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m
@@ -1227,6 +1399,10 @@ N/var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/Shared
 t1278744716
 s54265616
 
+N/var/folders/yT/yTm7JhnzGMiHqaZfd+bB8++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-eoursclkqxbbkggkepyjcvagkeeg/Artsmesh_Prefix.pch.gch
+t2
+s0
+
 NArtsmesh-Info.plist
 c000000004C3566AA00000000000003F3
 t1278568106
@@ -1249,6 +1425,9 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@110"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIFormDataRequest.m301585223#301585223#0(0"0(0#0#102"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIFormDataRequest.m8607060864#1380"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIFormDataRequest.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIFormDataRequest.o"0#
 
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIFormDataRequest.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIFormDataRequest.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIHTTPRequest.o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequest.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301585223.608740
 e301585224.760787
@@ -1262,6 +1441,9 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@106"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequest.m301585223#301585224#0(0"0(0#0#98"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequest.m8606876320#1372"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequest.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIHTTPRequest.o"0#
 
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIHTTPRequest.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIHTTPRequest.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIInputStream.o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIInputStream.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301585223.609973
 e301585223.928301
@@ -1274,6 +1456,9 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@106"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIInputStream.m301585223#301585223#0(0"0(0#0#98"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIInputStream.m8606633024#1372"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIInputStream.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIInputStream.o"0#
+
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/ASIInputStream.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/ASIHTTPRequest/ASIInputStream.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Account.o "/Users/Hailei/Project/Artsmesh/Source/Artsmesh 0.1/Account.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301246736.091279
@@ -1606,6 +1791,9 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@113"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripChanelInfo.m301669946#301669947#0(0"0(0#0#105"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripChanelInfo.m8758902560#1383"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripChanelInfo.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripChanelInfo.o"0#
 
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripChanelInfo.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripChanelInfo.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskContainer.o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskContainer.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301659009.936548
 e301659010.107362
@@ -1618,6 +1806,9 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@116"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskContainer.m301659009#301659010#0(0"0(0#0#108"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskContainer.m8705718688#1389"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskContainer.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskContainer.o"0#
+
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskContainer.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskContainer.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskHelper.o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskHelper.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301585224.146075
@@ -1632,6 +1823,9 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@113"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskHelper.m301585224#301585224#0(0"0(0#0#105"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskHelper.m8607080928#1383"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskHelper.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskHelper.o"0#
 
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/JackTripTaskHelper.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/TaskCommunication/JackTripTaskHelper.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulPostData.o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulPostData.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301657358.076903
 e301657359.491343
@@ -1645,6 +1839,9 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@113"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulPostData.m301657358#301657359#0(0"0(0#0#105"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulPostData.m4697084414167183360#1380"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulPostData.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulPostData.o"0#
 
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulPostData.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulPostData.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulRequestHelper.o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301669946.769053
 e301669947.009343
@@ -1657,6 +1854,9 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@118"Compile /Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m301669946#301669947#0(0"0(0#0#110"/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m8768941376#1390"    cd "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap" "-F/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Debug/include" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64" "-I/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources" -include /var/folders/SD/SDalT9bEHr0L7fM63pMuhU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-gqdvhwesppywkdbbxgxnemliggzb/Artsmesh_Prefix.pch -c "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m" -o "/Users/tonghe/Documents/Farefore Projects/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulRequestHelper.o"0#
+
+CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/RESTfulRequestHelper.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/RESTfulCommunication/RESTfulRequestHelper.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/main.o "/Users/Hailei/Project/Artsmesh/Source/Artsmesh 0.1/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s301238024.530196
@@ -2049,6 +2249,9 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@30"Precompile Artsmesh_Prefix.pch300437509#300437517#0(0"0(0#0#66"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_Prefix.pch4300911832#1058"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap -F/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/include -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources -c /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_Prefix.pch -o /var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/yT/yTm7JhnzGMiHqaZfd+bB8++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-eoursclkqxbbkggkepyjcvagkeeg/Artsmesh_Prefix.pch.gch Artsmesh_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CTouch "/Users/Hailei/Project/Artsmesh/Source/Artsmesh 0.1/build/Debug/Artsmesh.app"
 s301247118.392904
