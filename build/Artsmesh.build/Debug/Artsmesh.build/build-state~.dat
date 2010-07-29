@@ -1,333 +1,0 @@
-TArtsmesh
-v7
-r2
-t300437517.852062
-cCheck dependencies
-cProcessInfoPlistFile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Info.plist Artsmesh-Info.plist
-cCopyStringsFile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCompileXIB /Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/MainMenu.xib
-cProcessPCH /var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch.gch Artsmesh_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cDataModelCompile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/Artsmesh_DataModel.mom /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel
-cCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/main.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh_AppDelegate.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Contact.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004BE7604700000000000000EE
-t1273454663
-s238
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
-c000000004B99A23200000000000711BC
-t1268359730
-s463292
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AddressBook.framework/Headers/AddressBook.h
-c000000004B44A96F00000000000002C0
-t1262791023
-s704
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/InstantMessage.framework/Headers/IMService.h
-c000000004B44BCDB000000000000356D
-t1262795995
-s13677
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/InstantMessage.framework/InstantMessage
-c000000004B99A2330000000000017924
-t1268359731
-s96548
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ScriptingBridge.framework/ScriptingBridge
-c000000004B99A234000000000000F24C
-t1268359732
-s62028
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Account.h
-c000000004C3815D100000000000000EB
-t1278744017
-s235
-i<Cocoa/Cocoa.h>
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Account.m
-c000000004C3818730000000000000113
-t1278744691
-s275
-i"Account.h"
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.h
-c000000004C3566A900000000000002FC
-t1278568105
-s764
-i<Cocoa/Cocoa.h>
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m
-c000000004C3566A90000000000001E08
-t1278568105
-s7688
-i"Artsmesh_AppDelegate.h"
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel
-c000000004C3574F80000000000000088
-t1278571768
-s136
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_Prefix.pch
-c000000004C3566A90000000000000093
-t1278568105
-s147
-i<Cocoa/Cocoa.h>
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.h
-c000000004C3567F50000000000000280
-t1278568437
-s640
-i<Cocoa/Cocoa.h>
-i<AddressBook/AddressBook.h>
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m
-c000000004C3818820000000000001ABB
-t1278744706
-s6843
-i"Contact.h"
-i<InstantMessage/IMService.h>
-i"ABPersonDisplayNameAdditions.h"
-i"ContactController.h"
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/InfoPlist.strings
-c000000004C3566A9000000000000005A
-t1278568105
-s90
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/MainMenu.xib
-c000000004C3818080000000000030729
-t1278744584
-s198441
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Account.o
-t2
-s0
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh.LinkFileList
-c000000004C38188300000000000001EE
-t1278744707
-s494
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh_AppDelegate.o
-t1278744717
-s41664
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Contact.o
-t2
-s0
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/main.o
-t1278744717
-s5008
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app
-t2
-s0
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Info.plist
-t1278744707
-s889
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/MacOS/Artsmesh
-t2
-s0
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/PkgInfo
-t1278744707
-s8
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/Artsmesh_DataModel.mom
-t1278744717
-s1470
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1278744708
-s90
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/MainMenu.nib
-t1278744709
-s41340
-
-N/Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m
-c000000004C3566A900000000000000F7
-t1278568105
-s247
-i<Cocoa/Cocoa.h>
-
-N/var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch.gch
-t1278744716
-s54265616
-
-NArtsmesh-Info.plist
-c000000004C3566A900000000000003F3
-t1278568105
-s1011
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies300437507#300437507#0(0"0(0#1#0"7947009927035180032#0"0#
-
-CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Account.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Account.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh_AppDelegate.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s300437517.517201
-e300437517.851964
-r1
-xCompileC
-xbuild/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh_AppDelegate.o
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m300437517#300437518#0(0"0(0#0#69"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m4300911832#1193"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap -F/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/include -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources -include /var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch -c /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_AppDelegate.m -o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Artsmesh_AppDelegate.o0#
-
-CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Contact.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s300437517.521123
-e300437517.746474
-r0
-xCompileC
-xbuild/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Contact.o
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:12:41: error: ABPersonDisplayNameAdditions.h: No such file or directory
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:13:30: error: ContactController.h: No such file or directory
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:18: error: no declaration of property 'status' found in the interface
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[Contact activateChatApplication]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: 'iChatApplication' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: (Each undeclared identifier is reported only once
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: for each function it appears in.)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: 'iChat' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: 'SBApplication' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:28: error: 'status' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: At top level:
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'imContactStatus' requires method '-imContactStatus' to be defined - use @synthesize, @dynamic or provide a method implementation
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'imContactStatus' requires the method 'setImContactStatus:' to be defined - use @synthesize, @dynamic or provide a method implementation
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'abPeople' requires method '-abPeople' to be defined - use @synthesize, @dynamic or provide a method implementation
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'abPeople' requires the method 'setAbPeople:' to be defined - use @synthesize, @dynamic or provide a method implementation
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'contactTable' requires method '-contactTable' to be defined - use @synthesize, @dynamic or provide a method implementation
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'contactTable' requires the method 'setContactTable:' to be defined - use @synthesize, @dynamic or provide a method implementation
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: incomplete implementation of class 'Contact'
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-rebuildStatusInformationForContact:' not found
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-rebuildStatusInformation' not found
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-reloadABPeople' not found
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-setupABPeople' not found
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:46: warning: cannot find interface declaration for 'PeopleDataSource'
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource dealloc]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:48: error: '_abPeople' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:49: error: '_imPersonStatus' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:51: error: no super class declared in @interface for 'PeopleDataSource'
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource awakeFromNib]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:57: error: '_imPersonStatus' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: 'PeopleDataSource' may not respond to '-setupABPeople'
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: (Messages without a matching method signature
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: will be assumed to return 'id' and accept
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: '...' as arguments.)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:70: error: 'kAddressBookPersonStatusChanged' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:75: error: 'kStatusImagesChanged' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource rebuildStatusInformation]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:87: error: '_abPeople' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:106: error: '_imPersonStatus' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:109: error: '_table' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource rebuildStatusInformationForPerson:]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:115: error: '_abPeople' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:139: error: '_imPersonStatus' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:140: error: '_table' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource setupABPeople]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:151: error: '_abPeople' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:160: error: '_imPersonStatus' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource numberOfRowsInTableView:]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:182: error: '_abPeople' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:183: warning: control reaches end of non-void function
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource tableView:objectValueForTableColumn:row:]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:189: error: '_imPersonStatus' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:193: error: '_abPeople' undeclared (first use in this function)
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource statusImagesChanged:]':
-o/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:216: error: '_table' undeclared (first use in this function)
-lSLF07#2@64"Compile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437517#300437518#0(6967"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:12:41: error: ABPersonDisplayNameAdditions.h: No such file or directory/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:13:30: error: ContactController.h: No such file or directory/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:18: error: no declaration of property 'status' found in the interface/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[Contact activateChatApplication]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: 'iChatApplication' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: (Each undeclared identifier is reported only once/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: for each function it appears in.)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: 'iChat' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:26: error: 'SBApplication' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:28: error: 'status' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: At top level:/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'imContactStatus' requires method '-imContactStatus' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'imContactStatus' requires the method 'setImContactStatus:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'abPeople' requires method '-abPeople' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'abPeople' requires the method 'setAbPeople:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'contactTable' requires method '-contactTable' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: property 'contactTable' requires the method 'setContactTable:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: incomplete implementation of class 'Contact'/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-rebuildStatusInformationForContact:' not found/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-rebuildStatusInformation' not found/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-reloadABPeople' not found/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:40: warning: method definition for '-setupABPeople' not found/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:46: warning: cannot find interface declaration for 'PeopleDataSource'/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource dealloc]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:48: error: '_abPeople' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:49: error: '_imPersonStatus' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:51: error: no super class declared in @interface for 'PeopleDataSource'/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource awakeFromNib]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:57: error: '_imPersonStatus' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: 'PeopleDataSource' may not respond to '-setupABPeople'/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: (Messages without a matching method signature/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: will be assumed to return 'id' and accept/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:61: warning: '...' as arguments.)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:70: error: 'kAddressBookPersonStatusChanged' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:75: error: 'kStatusImagesChanged' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource rebuildStatusInformation]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:87: error: '_abPeople' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:106: error: '_imPersonStatus' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:109: error: '_table' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource rebuildStatusInformationForPerson:]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:115: error: '_abPeople' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:139: error: '_imPersonStatus' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:140: error: '_table' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource setupABPeople]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:151: error: '_abPeople' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:160: error: '_imPersonStatus' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource numberOfRowsInTableView:]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:182: error: '_abPeople' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:183: warning: control reaches end of non-void function/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource tableView:objectValueForTableColumn:row:]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:189: error: '_imPersonStatus' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:193: error: '_abPeople' undeclared (first use in this function)/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m: In function '-[PeopleDataSource statusImagesChanged:]':/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m:216: error: '_table' undeclared (first use in this function)41(4@57"ABPersonDisplayNameAdditions.h: No such file or directory300437517#0#129#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#12#0#12#0#28"*: No such file or directory0(4@46"ContactController.h: No such file or directory300437517#129#118#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#13#0#13#0#28"*: No such file or directory0(4@58"No declaration of property 'status' found in the interface300437517#247#127#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#18#0#18#0#0"0(4@58"'iChatApplication' undeclared (first use in this function)300437517#482#127#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#26#0#26#0#43"'*' undeclared (first use in this function)0(4@47"'iChat' undeclared (first use in this function)300437517#829#116#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#26#0#26#0#43"'*' undeclared (first use in this function)0(4@55"'SBApplication' undeclared (first use in this function)300437517#945#124#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#26#0#26#0#43"'*' undeclared (first use in this function)0(4@48"'status' undeclared (first use in this function)300437517#1069#117#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#28#0#28#0#43"'*' undeclared (first use in this function)0(23@13"At top level:300437517#1186#72#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#0#0#0#0#0"0(22@138"Property 'imContactStatus' requires method '-imContactStatus' to be defined - use @synthesize, @dynamic or provide a method implementation300437517#1258#209#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#0"0(22@145"Property 'imContactStatus' requires the method 'setImContactStatus:' to be defined - use @synthesize, @dynamic or provide a method implementation300437517#1467#216#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#0"0(22@124"Property 'abPeople' requires method '-abPeople' to be defined - use @synthesize, @dynamic or provide a method implementation300437517#1683#195#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#0"0(22@131"Property 'abPeople' requires the method 'setAbPeople:' to be defined - use @synthesize, @dynamic or provide a method implementation300437517#1878#202#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#0"0(22@132"Property 'contactTable' requires method '-contactTable' to be defined - use @synthesize, @dynamic or provide a method implementation300437517#2080#203#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#0"0(22@139"Property 'contactTable' requires the method 'setContactTable:' to be defined - use @synthesize, @dynamic or provide a method implementation300437517#2283#210#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#0"0(22@44"Incomplete implementation of class 'Contact'300437517#2493#115#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#38"incomplete implementation of class '*'0(22@70"Method definition for '-rebuildStatusInformationForContact:' not found300437517#2608#141#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#35"method definition for '*' not found0(22@59"Method definition for '-rebuildStatusInformation' not found300437517#2749#130#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#35"method definition for '*' not found0(22@49"Method definition for '-reloadABPeople' not found300437517#2879#120#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#35"method definition for '*' not found0(22@48"Method definition for '-setupABPeople' not found300437517#2999#119#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#40#0#40#0#35"method definition for '*' not found0(22@56"Cannot find interface declaration for 'PeopleDataSource'300437517#3118#127#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#46#0#46#0#0"0(4@51"'_abPeople' undeclared (first use in this function)300437517#3346#120#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#48#0#48#0#43"'*' undeclared (first use in this function)0(4@57"'_imPersonStatus' undeclared (first use in this function)300437517#3466#126#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#49#0#49#0#43"'*' undeclared (first use in this function)0(4@60"No super class declared in @interface for 'PeopleDataSource'300437517#3592#129#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#51#0#51#0#0"0(4@57"'_imPersonStatus' undeclared (first use in this function)300437517#3827#126#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#57#0#57#0#43"'*' undeclared (first use in this function)0(22@54"'PeopleDataSource' may not respond to '-setupABPeople'300437517#3953#125#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#61#0#61#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)300437517#4078#116#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#61#0#61#0#0"0(4@73"'kAddressBookPersonStatusChanged' undeclared (first use in this function)300437517#4397#142#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#70#0#70#0#43"'*' undeclared (first use in this function)0(4@62"'kStatusImagesChanged' undeclared (first use in this function)300437517#4539#131#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#75#0#75#0#43"'*' undeclared (first use in this function)0(4@51"'_abPeople' undeclared (first use in this function)300437517#4788#120#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#87#0#87#0#43"'*' undeclared (first use in this function)0(4@57"'_imPersonStatus' undeclared (first use in this function)300437517#4908#127#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#106#0#106#0#43"'*' undeclared (first use in this function)0(4@48"'_table' undeclared (first use in this function)300437517#5035#118#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#109#0#109#0#43"'*' undeclared (first use in this function)0(4@51"'_abPeople' undeclared (first use in this function)300437517#5281#121#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#115#0#115#0#43"'*' undeclared (first use in this function)0(4@57"'_imPersonStatus' undeclared (first use in this function)300437517#5402#127#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#139#0#139#0#43"'*' undeclared (first use in this function)0(4@48"'_table' undeclared (first use in this function)300437517#5529#118#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#140#0#140#0#43"'*' undeclared (first use in this function)0(4@51"'_abPeople' undeclared (first use in this function)300437517#5754#121#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#151#0#151#0#43"'*' undeclared (first use in this function)0(4@57"'_imPersonStatus' undeclared (first use in this function)300437517#5875#127#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#160#0#160#0#43"'*' undeclared (first use in this function)0(4@51"'_abPeople' undeclared (first use in this function)300437517#6120#121#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#182#0#182#0#43"'*' undeclared (first use in this function)0(22@40"Control reaches end of non-void function300437517#6241#112#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#183#0#183#0#40"control reaches end of non-void function0(4@57"'_imPersonStatus' undeclared (first use in this function)300437517#6487#127#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#189#0#189#0#43"'*' undeclared (first use in this function)0(4@51"'_abPeople' undeclared (first use in this function)300437517#6614#121#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#193#0#193#0#43"'*' undeclared (first use in this function)0(4@48"'_table' undeclared (first use in this function)300437517#6849#118#0(6@56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m300437506#216#0#216#0#43"'*' undeclared (first use in this function)0(0#0#56"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m4300911832#1167"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap -F/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/include -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources -include /var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch -c /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Contact.m -o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/Contact.o1#
-
-CCompileC build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/main.o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s300437517.159667
-e300437517.517079
-r1
-xCompileC
-xbuild/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/main.o
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m300437517#300437517#0(0"0(0#0#53"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m4300911832#1161"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap -F/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/include -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources -include /var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch -c /Users/Hailei/Project/Artsmesh/Source/Artsmesh/main.m -o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Objects-normal/x86_64/main.o0#
-
-CCompileXIB /Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/MainMenu.xib
-s300437507.863160
-e300437509.081187
-r1
-xCompileXIB
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib300437507#300437509#0(0"0(0#0#73"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/MainMenu.xib4300911832#352"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/MainMenu.nib /Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/MainMenu.xib0#
-
-CCopyStringsFile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s300437507.861009
-e300437508.653366
-r1
-xCopyStringsFile
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings300437507#300437508#0(0"0(0#0#78"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/English.lproj/InfoPlist.strings4300911832#383"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/English.lproj0#
-
-CDataModelCompile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/Artsmesh_DataModel.mom /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel
-s300437517.158288
-e300437517.520995
-r1
-xDataModelCompile
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/Artsmesh_DataModel.mom
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel
-lSLF07#2@85"Compile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel300437517#300437517#0(0"0(0#0#77"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel4300911832#303"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_DataModel.xcdatamodel /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Resources/Artsmesh_DataModel.mom0#
-
-CLd /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/MacOS/Artsmesh normal x86_64
-r0
-
-CProcessInfoPlistFile /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Info.plist Artsmesh-Info.plist
-s300437507.774200
-e300437507.860869
-r1
-xProcessInfoPlistFile
-x/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Info.plist
-xArtsmesh-Info.plist
-lSLF07#2@27"Process Artsmesh-Info.plist300437507#300437507#0(0"0(0#0#66"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh-Info.plist30399748463984736#337"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    builtin-infoPlistUtility Artsmesh-Info.plist -genpkginfo /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch.gch Artsmesh_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s300437509.081397
-e300437517.157990
-r1
-xProcessPCH
-x/var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch.gch
-xArtsmesh_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@30"Precompile Artsmesh_Prefix.pch300437509#300437517#0(0"0(0#0#66"/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_Prefix.pch4300911832#1058"    cd /Users/Hailei/Project/Artsmesh/Source/Artsmesh    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/Artsmesh.hmap -F/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/include -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources/x86_64 -I/Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Artsmesh.build/Debug/Artsmesh.build/DerivedSources -c /Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh_Prefix.pch -o /var/folders/pf/pfDRdJp-FDqtxSEpKhKPrk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Artsmesh_Prefix-exaaqrxzupujqoeexcwvmjecquqc/Artsmesh_Prefix.pch.gch0#
-
-CTouch /Users/Hailei/Project/Artsmesh/Source/Artsmesh/build/Debug/Artsmesh.app
-r0
-
