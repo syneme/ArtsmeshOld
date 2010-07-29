@@ -2,8 +2,8 @@
 //  JackServerPreference.m
 //  Artsmesh
 //
-//  Created by Hailei Wang on 7/29/10.
-//  Copyright (c) 2010 __MyCompanyName__. All rights reserved.
+//  Created by Sky Jia on 7/29/10.
+//  Copyright 2010 Farefore. All rights reserved.
 //
 
 #import "JackServerPreference.h"
@@ -11,18 +11,24 @@
 
 @implementation JackServerPreference
 
-- (id)init {
-    if ((self = [super init])) {
-        // Initialization code here.
-    }
-    
-    return self;
-}
+@synthesize driver;
+@synthesize inputDevice;
+@synthesize outputDevice;
+@synthesize sampleRate;
+@synthesize bufferSize;
+@synthesize interfaceInputChannels;
+@synthesize interfaceOutputChanels;
 
-- (void)dealloc {
-    // Clean-up code here.
-    
-    [super dealloc];
+-(void) dealloc{
+	[driver release];
+	[inputDevice release];
+	[outputDevice release];
+	[sampleRate release];
+	[bufferSize release];
+	[interfaceInputChannels release];
+	[interfaceOutputChanels release];
+	
+	[super dealloc];
 }
 
 @end
