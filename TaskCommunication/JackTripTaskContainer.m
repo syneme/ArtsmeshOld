@@ -17,18 +17,20 @@
 @synthesize jackTripServerTaskList;
 @synthesize jackServerTask;
 
--(void) dealloc{
-	[self->jackClientChanelList release];
-	[self->jackServerChanelList release];
-	
+-(void) stopAllTasks{
 	[JackTripTaskHelper terminateTaskList:&(self->jackTripClientTaskList)];
-	[self->jackTripClientTaskList release];
-	
 	[JackTripTaskHelper terminateTaskList:&(self->jackTripServerTaskList)];
-	[self->jackTripServerTaskList release];
-	
 	[JackTripTaskHelper terminateTask:&(self->jackServerTask)];
-	[self->jackServerTask release];
+}
+
+-(void) dealloc{
+	[self stopAllTasks];
+	
+	[jackClientChanelList release];
+	[jackServerChanelList release];
+	[jackTripClientTaskList release];
+	[jackTripServerTaskList release];
+	[jackServerTask release];
 	
 	[super dealloc];
 }

@@ -12,29 +12,29 @@
 #import "ASIFormDataRequest.h"
 
 @interface RESTfulRequestHelper : NSObject {
-
+	
 }
 
 // GET
 +(NSString*) sendGETRequest:(NSString*)baseURLString;
 
 +(NSString*) sendGETRequest:(NSString*)baseURLString 
-				   username:(NSString*)username 
-				   password:(NSString*)password;
+		   username:(NSString*)username 
+		   password:(NSString*)password;
 
 // POST
 +(NSString*) sendPOSTRequest:(NSString*)postDataArray 
-			   postDataArray:(NSArray*)postData;
+	       postDataArray:(NSArray*)postData;
 
 +(NSString*) sendPOSTRequest:(NSString*)baseURLString 
-			   postDataArray:(NSArray*)postDataArray 
-					username:(NSString*)username 
-					password:(NSString*)password;
+	       postDataArray:(NSArray*)postDataArray 
+		    username:(NSString*)username 
+		    password:(NSString*)password;
 
 +(NSString*) sendPOSTRequestWithXmlText:(NSString*)baseURLString 
-					xmlText:(NSString*)xmlText;
+				xmlText:(NSString*)xmlText;
 +(NSString*) sendPOSTRequestWithXmlText:(NSString*)baseURLString 
-					xmlText:(NSString*)textData 
-					username:(NSString*)username 
-					password:(NSString*)password;
+				xmlText:(NSString*)textData 
+			       username:(NSString*)username 
+			       password:(NSString*)password;
 @end

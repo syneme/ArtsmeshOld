@@ -25,6 +25,7 @@
 		9D3D070A11F9D36C00913793 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070911F9D36C00913793 /* SystemConfiguration.framework */; };
 		9D3D070C11F9D37300913793 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070B11F9D37300913793 /* libz.1.2.3.dylib */; };
 		F242038811E84CFE00534C7A /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = F242038711E84CFE00534C7A /* Account.m */; };
+		F29424A11201BB5900EBB772 /* JackServerPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = F29424A01201BB5900EBB772 /* JackServerPreference.m */; };
 		F296CDAB11F4A5B300B6A13F /* ChatTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F296CDAA11F4A5B300B6A13F /* ChatTaskHelper.m */; };
 		F2A1B88911EEC5AC00DC5BD0 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1B88811EEC5AC00DC5BD0 /* Contacts.m */; };
 		F2DBD2EC11F52AA6000C61ED /* iChat.icns in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2E711F52AA6000C61ED /* iChat.icns */; };
@@ -75,6 +76,8 @@
 		9D3D070B11F9D37300913793 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		F242038611E84CFE00534C7A /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		F242038711E84CFE00534C7A /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		F294249F1201BB5900EBB772 /* JackServerPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JackServerPreference.h; sourceTree = "<group>"; };
+		F29424A01201BB5900EBB772 /* JackServerPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JackServerPreference.m; sourceTree = "<group>"; };
 		F296CDA911F4A5B300B6A13F /* ChatTaskHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTaskHelper.h; sourceTree = "<group>"; };
 		F296CDAA11F4A5B300B6A13F /* ChatTaskHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTaskHelper.m; sourceTree = "<group>"; };
 		F2A1B88711EEC5AC00DC5BD0 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 		9D3D06F411F9D34500913793 /* TaskCommunication */ = {
 			isa = PBXGroup;
 			children = (
+				F294249F1201BB5900EBB772 /* JackServerPreference.h */,
+				F29424A01201BB5900EBB772 /* JackServerPreference.m */,
 				9D3D06F511F9D34500913793 /* JackTripChanelInfo.h */,
 				9D3D06F611F9D34500913793 /* JackTripChanelInfo.m */,
 				9D3D06F711F9D34500913793 /* JackTripTaskContainer.h */,
@@ -353,6 +358,7 @@
 				9D3D070011F9D34500913793 /* JackTripChanelInfo.m in Sources */,
 				9D3D070111F9D34500913793 /* JackTripTaskContainer.m in Sources */,
 				9D3D070211F9D34500913793 /* JackTripTaskHelper.m in Sources */,
+				F29424A11201BB5900EBB772 /* JackServerPreference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

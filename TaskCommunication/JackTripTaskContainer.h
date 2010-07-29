@@ -23,4 +23,6 @@
 @property (assign) NSArray *jackTripServerTaskList;
 @property (assign) NSTask *jackServerTask;
 
+-(void) stopAllTasks;
+
 @end

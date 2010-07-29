@@ -18,8 +18,8 @@
 }
 
 +(NSString*) sendGETRequest:(NSString*)baseURLString 
-				   username:(NSString*)username 
-				   password:(NSString*)password
+		   username:(NSString*)username 
+		   password:(NSString*)password
 {
 	NSURL *url=[NSURL URLWithString:baseURLString];
 	NSString *result=nil;
@@ -42,15 +42,15 @@
 
 // POST
 +(NSString*) sendPOSTRequest:(NSString*)baseURLString 
-			   postDataArray:(NSArray*)postDataArray
+	       postDataArray:(NSArray*)postDataArray
 {	
 	return [RESTfulRequestHelper sendPOSTRequest:baseURLString postDataArray:postDataArray username:nil password:nil];
 }
 
 +(NSString*) sendPOSTRequest:(NSString*)baseURLString 
-		postDataArray:(NSArray*)postDataArray 
-					username:(NSString*)username 
-					password:(NSString*)password
+	       postDataArray:(NSArray*)postDataArray 
+		    username:(NSString*)username 
+		    password:(NSString*)password
 {
 	NSURL *url=[NSURL URLWithString:baseURLString];
 	NSString *result=nil;
@@ -80,15 +80,15 @@
 }
 
 +(NSString*) sendPOSTRequestWithXmlText:(NSString*)baseURLString 
-					xmlText:(NSString*)xmlText 
+				xmlText:(NSString*)xmlText 
 {
 	return [RESTfulRequestHelper sendPOSTRequestWithXmlText:baseURLString xmlText:xmlText username:nil password:nil];
 }
 
 +(NSString*) sendPOSTRequestWithXmlText:(NSString*)baseURLString 
-					xmlText:(NSString*)xmlText 
-					username:(NSString*)username 
-					password:(NSString*)password
+				xmlText:(NSString*)xmlText 
+			       username:(NSString*)username 
+			       password:(NSString*)password
 {
 	NSURL *url=[NSURL URLWithString:baseURLString];
 	NSString *result=nil;

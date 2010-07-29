@@ -8,11 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "JackTripChanelInfo.h"
+#import "JackServerPreference.h"
 
 @interface JackTripTaskHelper : NSObject {	
 }
 
-+(NSTask*) startJackServer;
++(NSTask*) startJackServerWithPreference:(JackServerPreference*)preference;
 +(NSArray*) buildJackTaskList:(NSArray*) jackChanelList;
 
 +(void) launchTask :(NSTask**) task;

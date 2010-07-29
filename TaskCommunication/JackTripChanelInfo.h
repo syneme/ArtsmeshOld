@@ -15,7 +15,7 @@ extern NSInteger const JACK_TRIP_BASE_PORT;
 	NSInteger port;
 }
 
-@property (assign) NSString *ipAddress;
+@property (copy) NSString *ipAddress;
 @property (assign) NSInteger port;
 
 +(NSArray*) getJackTripChanelListFromXml:(NSString*) xmlText;

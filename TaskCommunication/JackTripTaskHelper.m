@@ -10,15 +10,24 @@
 
 @implementation JackTripTaskHelper
 
-+(NSTask*) startJackServer{
-	// TODO: change the command arguments for staring jack server.
-	// init jackServerTask
++(NSTask*) startJackServerWithPreference:(JackServerPreference*)preference
+{
 	NSTask *task=[[NSTask alloc] init];
 	
+	// jackdmp --realtime -d coreaudio -C "Built-in Input" -P "Built-in Output" -i2 -o2 -r44100 -p128
 	[task setLaunchPath:@"/usr/local/bin/jackdmp"];
 	[task setArguments:
 	 [NSArray arrayWithObjects:	
-	  @"--version",
+	  @"-d",
+	  preference.driver,
+	  @"-C",
+	  preference.inputDevice,
+	  @"-P",
+	  preference.outputDevice,
+	  [NSString stringWithFormat:@"-i%@",preference.interfaceInputChannels],
+	  [NSString stringWithFormat:@"-o%@",preference.interfaceOutputChanels],
+	  [NSString stringWithFormat:@"-r%@",preference.sampleRate],
+	  [NSString stringWithFormat:@"-p%@",preference.bufferSize],
 	  nil]];
 	
 	[JackTripTaskHelper launchTask:&task];
@@ -82,7 +91,7 @@
 	if(jackChanelList!=nil){
 		JackTripChanelInfo *chanel;
 		for(chanel in jackChanelList){
-
+			
 			NSTask *jackTripTask;
 			jackTripTask=[[NSTask alloc] init];
 			[jackTripTask setLaunchPath:@"/usr/bin/jacktrip"];
@@ -113,8 +122,7 @@
 				  nil]];
 			}
 			
-			[jackTripTask autorelease];
-			[taskList addObject:jackTripTask];
+			[taskList addObject:[jackTripTask autorelease]];
 		}
 	}
 	
