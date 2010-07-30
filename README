@@ -1,6 +1,7 @@
 Artsmesh 
 
 
+
 VERSION: 0.3
 UPDATED AT: July 30, 2010 
 AUTHOR: WANG Hailei, JIA Chao, and LIU Hui from Farefore Co. (http://farefore.com)
@@ -10,36 +11,73 @@ Copyright © 2010 Farefore Co. All rights reserved.
 
 
 
+
 // DESCRIPTION:
 
-The client side of Artsmesh runs on Mac OS X.
-Artsmesh unifies and simplifies the process of manipulating Jack Server and JackTrip
+Artsmesh unifies and simplifies the process of conducting tele-performance for musicians.
+Artsmesh has the client-side application runs on Mac OS X 10.6, and the Ruby on Rails REST 
+web service. The client-side application of Artsmesh runs on users' Mac OS X system. The
+REST web service runs on the Syneme server for coordinating and exchanging users/clients 
+information including: Name, IP addressess, ports, parameters, relationship, etc.
 
 
-// PREREQUISIT:
 
+// FUNCTIONS:
+
+Automatically launch and terminate Jack Server.
+1, Automatically launch JackTrip as server and client, and automatically establish JackTrip 
+connections among Artsmesh users in the Cartesian way.
+
+
+
+// PREREQUISITE:
+
+Softwares must be installed before using Artsmesh client.
 1, Jack Server for Mac OS X 10.5 or 10.6
 2, JackTrip >= 1.0.4 (For IPv6 environment, a version support IPv6 needed. )
-3, iChat 
+3, iChat
 
 
-// FUNCTION:
 
-high-level overview of the software (very high-level). 
+// BEFORE START USING ARTSMESH CLIENT:
 
-And that's all, other than possibly references to which files contain other information 
-that a person might be interested in such as installation instructions (in INSTALL), 
-the authors (in AUTHORS), or history (in ChangeLog or ReleaseNotes).
+1, The Artsmesh REST web service needs to be running well.
+2, If the iChat is not running, it can be started by clicking the "Start ichat" toolbar item 
+in Artsmesh.
+
+
+
+// PROCESS AND SCENARIO OF USING ARTSMESH
+
+Users A, B, C. A is going to host a tele-performance. B and C will participate in it.
+
+To start a tele-performance.
+1, A select the IP Address he want to use, and then click the start button
+2, When the "I'm ready." button become available, B and C select the IP Address, and click 
+the "I'm ready." button to accept participating the JackTrip connection.
+
+TO Stop a tele-performance.
+1, A or B or C clicks the stop button, he/she will quit the connections.
+
 
 
 // KNOWN ISSUES:
 
-1, The jackmdp process, respresenting a Jack Server instance running on Mac OS X, cannot 
+1, The jackmdp process, representing a Jack Server instance running on Mac OS X, cannot 
 be terminated cleanly or surely.
-2, 
 
 
-// NEXT SETP:
+
+// INTERACTION DESIGN TODO:
+
+1, The "I'm ready" button will be replaced with a modal window.
+2, A feedback console window will be added to the main interface.
+
+
+
+
+// WHAT WILL HAVE IN THE FUTURE VERSIONS:
+
 1, Integrating StatusNet' basic functions into Artsmesh UI.
-2, Take back the function of video and audio chatting through iChat.
-3, Jack Routing UI
+2, Take back the function of video and audio chatting through iChat. (Take down for the moment)
+3, New and integrated Jack Routing Pane UI
