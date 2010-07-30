@@ -1,0 +1,45 @@
+Artsmesh 
+
+
+VERSION: 0.3
+UPDATED AT: July 30, 2010 
+AUTHOR: WANG Hailei, JIA Chao, and LIU Hui from Farefore Co. (http://farefore.com)
+
+Copyright © 2010 Farefore Co. All rights reserved.
+
+
+
+
+// DESCRIPTION:
+
+The client side of Artsmesh runs on Mac OS X.
+Artsmesh unifies and simplifies the process of manipulating Jack Server and JackTrip
+
+
+// PREREQUISIT:
+
+1, Jack Server for Mac OS X 10.5 or 10.6
+2, JackTrip >= 1.0.4 (For IPv6 environment, a version support IPv6 needed. )
+3, iChat 
+
+
+// FUNCTION:
+
+high-level overview of the software (very high-level). 
+
+And that's all, other than possibly references to which files contain other information 
+that a person might be interested in such as installation instructions (in INSTALL), 
+the authors (in AUTHORS), or history (in ChangeLog or ReleaseNotes).
+
+
+// KNOWN ISSUES:
+
+1, The jackmdp process, respresenting a Jack Server instance running on Mac OS X, cannot 
+be terminated cleanly or surely.
+2, 
+
+
+// NEXT SETP:
+1, Integrating StatusNet' basic functions into Artsmesh UI.
+2, Take back the function of video and audio chatting through iChat.
+3, Jack Routing UI

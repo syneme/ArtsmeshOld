@@ -10,7 +10,6 @@
 
 
 @interface JackServerPreference : NSObject {
-	NSString *driver;
 	NSString *inputDevice;
 	NSString *outputDevice;
 	NSString *sampleRate;
@@ -19,7 +18,6 @@
 	NSString *interfaceOutputChanels;
 }
 
-@property (copy) NSString *driver;
 @property (copy) NSString *inputDevice;
 @property (copy) NSString *outputDevice;
 @property (copy) NSString *sampleRate;

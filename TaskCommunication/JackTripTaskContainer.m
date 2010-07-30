@@ -18,9 +18,31 @@
 @synthesize jackServerTask;
 
 -(void) stopAllTasks{
-	[JackTripTaskHelper terminateTaskList:&(self->jackTripClientTaskList)];
-	[JackTripTaskHelper terminateTaskList:&(self->jackTripServerTaskList)];
-	[JackTripTaskHelper terminateTask:&(self->jackServerTask)];
+
+	
+	[NSTask launchedTaskWithLaunchPath:@"/usr/bin/killall" 
+							 arguments:[NSArray arrayWithObjects:	
+										@"-c",
+										@"jacktrip",
+										nil]];
+	
+
+	
+	[NSTask launchedTaskWithLaunchPath:@"/usr/bin/killall" 
+							 arguments:[NSArray arrayWithObjects:	
+										@"-c",
+										@"jackdmp",
+										nil]];
+	
+	[NSTask launchedTaskWithLaunchPath:@"/usr/bin/killall" 
+							 arguments:[NSArray arrayWithObjects:	
+										@"-c",
+										@"JackPilot",
+										nil]];
+	
+	//[JackTripTaskHelper terminateTaskList:&(self->jackTripClientTaskList)];
+	//[JackTripTaskHelper terminateTaskList:&(self->jackTripServerTaskList)];
+	//[JackTripTaskHelper terminateTask:&(self->jackServerTask)];
 }
 
 -(void) dealloc{

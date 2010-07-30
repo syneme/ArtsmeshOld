@@ -18,8 +18,9 @@
 	[task setLaunchPath:@"/usr/local/bin/jackdmp"];
 	[task setArguments:
 	 [NSArray arrayWithObjects:	
+      @"--realtime",
 	  @"-d",
-	  preference.driver,
+	  @"coreaudio",
 	  @"-C",
 	  preference.inputDevice,
 	  @"-P",
@@ -30,16 +31,17 @@
 	  [NSString stringWithFormat:@"-p%@",preference.bufferSize],
 	  nil]];
 	
-	[JackTripTaskHelper launchTask:&task];
+ 	[JackTripTaskHelper launchTask:&task];
 	
 	return [task autorelease];
 }
 
 +(void) launchTask :(NSTask**) task{
 	NSTask *curTask=*task;
-	
+	NSLog(@"Launching task: %@",[curTask description]);
 	if(curTask!=nil)
 		[curTask launch];
+	NSLog(@"Launched task at %@",[[NSDate date] description]);
 }
 
 +(void) launchTaskList:(NSArray**)taskList{
@@ -61,9 +63,7 @@
 +(void) terminateTask :(NSTask**) task{
 	NSTask *curTask=*task;
 	if (curTask!=nil) {
-		if ([curTask isRunning]) {
-			[curTask terminate];
-		}
+		[curTask terminate];
 	}
 }
 
@@ -73,10 +73,7 @@
 	if(curTaskList!=nil){
 		NSTask *task;
 		for(task in curTaskList){
-			if ([task isRunning]) {
-				[JackTripTaskHelper terminateTask:&task];
-			}
-			
+			[JackTripTaskHelper terminateTask:&task];
 		}
 	}
 }

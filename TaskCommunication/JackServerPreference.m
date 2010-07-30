@@ -11,7 +11,6 @@
 
 @implementation JackServerPreference
 
-@synthesize driver;
 @synthesize inputDevice;
 @synthesize outputDevice;
 @synthesize sampleRate;
@@ -20,7 +19,6 @@
 @synthesize interfaceOutputChanels;
 
 -(void) dealloc{
-	[driver release];
 	[inputDevice release];
 	[outputDevice release];
 	[sampleRate release];
