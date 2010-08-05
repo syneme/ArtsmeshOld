@@ -33,6 +33,10 @@
 		F2DBD2EE11F52AA6000C61ED /* status-away-flat-etched.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2E911F52AA6000C61ED /* status-away-flat-etched.tif */; };
 		F2DBD2EF11F52AA6000C61ED /* status-idle-flat-etched.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2EA11F52AA6000C61ED /* status-idle-flat-etched.tif */; };
 		F2DBD2F011F52AA6000C61ED /* status-invisible-flat-etched.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2DBD2EB11F52AA6000C61ED /* status-invisible-flat-etched.tif */; };
+		F2E05B08120A8C4400A73145 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E05B07120A8C4400A73145 /* PreferencesWindow.xib */; };
+		F2E05B0B120A930E00A73145 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E05B0A120A930E00A73145 /* PreferencesController.m */; };
+		F2E05B0D120A93C700A73145 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E05B0C120A93C700A73145 /* MainWindow.xib */; };
+		F2E05B10120A93FA00A73145 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E05B0F120A93FA00A73145 /* MainWindowController.m */; };
 		F2EE524911E59ECF003C2DEE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EE524811E59ECF003C2DEE /* AddressBook.framework */; };
 		F2EE524B11E59ECF003C2DEE /* InstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EE524A11E59ECF003C2DEE /* InstantMessage.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +92,12 @@
 		F2DBD2E911F52AA6000C61ED /* status-away-flat-etched.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status-away-flat-etched.tif"; sourceTree = "<group>"; };
 		F2DBD2EA11F52AA6000C61ED /* status-idle-flat-etched.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status-idle-flat-etched.tif"; sourceTree = "<group>"; };
 		F2DBD2EB11F52AA6000C61ED /* status-invisible-flat-etched.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "status-invisible-flat-etched.tif"; sourceTree = "<group>"; };
+		F2E05B07120A8C4400A73145 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		F2E05B09120A930E00A73145 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		F2E05B0A120A930E00A73145 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		F2E05B0C120A93C700A73145 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		F2E05B0E120A93FA00A73145 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		F2E05B0F120A93FA00A73145 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		F2EE524811E59ECF003C2DEE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		F2EE524A11E59ECF003C2DEE /* InstantMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstantMessage.framework; path = System/Library/Frameworks/InstantMessage.framework; sourceTree = SDKROOT; };
 		F2EE525111E59F50003C2DEE /* iChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iChat.h; sourceTree = "<group>"; };
@@ -124,6 +134,10 @@
 				F2A1B88811EEC5AC00DC5BD0 /* Contacts.m */,
 				F296CDA911F4A5B300B6A13F /* ChatTaskHelper.h */,
 				F296CDAA11F4A5B300B6A13F /* ChatTaskHelper.m */,
+				F2E05B0E120A93FA00A73145 /* MainWindowController.h */,
+				F2E05B0F120A93FA00A73145 /* MainWindowController.m */,
+				F2E05B09120A930E00A73145 /* PreferencesController.h */,
+				F2E05B0A120A930E00A73145 /* PreferencesController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -185,9 +199,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
+				F2E05B0C120A93C700A73145 /* MainWindow.xib */,
+				F2E05B07120A8C4400A73145 /* PreferencesWindow.xib */,
 				8D1107310486CEB800E47090 /* Artsmesh-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -310,7 +326,6 @@
 			isa = PBXProject;
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Artsmesh" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
@@ -336,6 +351,8 @@
 				F2DBD2EE11F52AA6000C61ED /* status-away-flat-etched.tif in Resources */,
 				F2DBD2EF11F52AA6000C61ED /* status-idle-flat-etched.tif in Resources */,
 				F2DBD2F011F52AA6000C61ED /* status-invisible-flat-etched.tif in Resources */,
+				F2E05B08120A8C4400A73145 /* PreferencesWindow.xib in Resources */,
+				F2E05B0D120A93C700A73145 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +378,8 @@
 				9D3D070111F9D34500913793 /* JackTripTaskContainer.m in Sources */,
 				9D3D070211F9D34500913793 /* JackTripTaskHelper.m in Sources */,
 				F29424A11201BB5900EBB772 /* JackServerPreference.m in Sources */,
+				F2E05B0B120A930E00A73145 /* PreferencesController.m in Sources */,
+				F2E05B10120A93FA00A73145 /* MainWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

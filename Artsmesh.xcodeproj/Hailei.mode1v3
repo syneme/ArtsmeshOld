@@ -276,6 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>25</integer>
+									<integer>22</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -319,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Artsmesh_AppDelegate.h</string>
+								<string>Artsmesh_AppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Artsmesh_AppDelegate.h</string>
+										<string>Artsmesh_AppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F2171A9C1201B88D0024752C</string>
+										<string>F2ED3F17120AA72B00A0E4A7</string>
 										<key>history</key>
 										<array>
 											<string>F296910911E8D20D002B9019</string>
@@ -339,7 +341,6 @@
 											<string>F296CDD211F4AADC00B6A13F</string>
 											<string>F296CDD311F4AADC00B6A13F</string>
 											<string>F296CDD411F4AADC00B6A13F</string>
-											<string>F296CDD511F4AADC00B6A13F</string>
 											<string>F296CDD611F4AADC00B6A13F</string>
 											<string>F2DBD2FB11F52C09000C61ED</string>
 											<string>F2DBD2FC11F52C09000C61ED</string>
@@ -349,8 +350,11 @@
 											<string>F2DBD30911F53421000C61ED</string>
 											<string>F2B2815F11F54CE900870BA6</string>
 											<string>F2B2816411F54CE900870BA6</string>
-											<string>F28ECF7C12012C000024E8F0</string>
-											<string>F280F086120173B20077B116</string>
+											<string>F2ED3EE9120AA12D00A0E4A7</string>
+											<string>F2ED3EEA120AA12D00A0E4A7</string>
+											<string>F2ED3EF0120AA21800A0E4A7</string>
+											<string>F2ED3F02120AA3B700A0E4A7</string>
+											<string>F2ED3F13120AA49800A0E4A7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -408,9 +412,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>F2171A991201B88D0024752C</string>
+				<string>F2ED3EE4120A98A400A0E4A7</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>F2171A9A1201B88D0024752C</string>
+				<string>F2ED3EE5120A98A400A0E4A7</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -548,8 +552,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>F2ED3F0D120AA3B700A0E4A7</string>
+		<string>F2ED3F0E120AA3B700A0E4A7</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>F2EE526811E5D78E003C2DEE</string>
-		<string>/Users/Hailei/Project/Artsmesh/Source/Artsmesh/Artsmesh.xcodeproj</string>
+		<string>/Users/Hailei/Project/Client/Artsmesh/Source/Artsmesh/Artsmesh.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 43 1440 835 0 0 1440 878 </string>
@@ -573,7 +581,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>Artsmesh_AppDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -590,6 +598,8 @@
 							<string>148pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -629,7 +639,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>F2EE526811E5D78E003C2DEE</string>
-				<string>F2171A9B1201B88D0024752C</string>
+				<string>F2ED3EE6120A98A400A0E4A7</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -751,13 +761,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>F2685392120130AB00C18F7F</string>
+				<string>F2ED3F05120AA3B700A0E4A7</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>F2685393120130AB00C18F7F</string>
-				<string>F2685394120130AB00C18F7F</string>
-				<string>F2685395120130AB00C18F7F</string>
-				<string>F2685396120130AB00C18F7F</string>
-				<string>F2685397120130AB00C18F7F</string>
+				<string>F2ED3F06120AA3B700A0E4A7</string>
+				<string>F2ED3F07120AA3B700A0E4A7</string>
+				<string>F2ED3F08120AA3B700A0E4A7</string>
+				<string>F2ED3F09120AA3B700A0E4A7</string>
+				<string>F2ED3F0A120AA3B700A0E4A7</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -919,7 +929,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>F2685398120130AB00C18F7F</string>
+				<string>F2ED3F0B120AA3B700A0E4A7</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
