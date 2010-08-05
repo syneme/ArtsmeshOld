@@ -60,10 +60,11 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 302684314;
-			PBXWorkspaceStateSaveDate = 302684314;
+			PBXPerProjectTemplateStateSaveDate = 302696473;
+			PBXWorkspaceStateSaveDate = 302696473;
 		};
 		perUserProjectItems = {
+			F2779E03120AB9AD00B5DCD5 /* PBXTextBookmark */ = F2779E03120AB9AD00B5DCD5 /* PBXTextBookmark */;
 			F296910911E8D20D002B9019 /* PBXTextBookmark */ = F296910911E8D20D002B9019 /* PBXTextBookmark */;
 			F296CDCF11F4AADC00B6A13F /* PBXTextBookmark */ = F296CDCF11F4AADC00B6A13F /* PBXTextBookmark */;
 			F296CDD211F4AADC00B6A13F /* PBXTextBookmark */ = F296CDD211F4AADC00B6A13F /* PBXTextBookmark */;
@@ -72,6 +73,7 @@
 			F296CDD611F4AADC00B6A13F /* PBXTextBookmark */ = F296CDD611F4AADC00B6A13F /* PBXTextBookmark */;
 			F2B2815F11F54CE900870BA6 /* PBXTextBookmark */ = F2B2815F11F54CE900870BA6 /* PBXTextBookmark */;
 			F2B2816411F54CE900870BA6 /* PBXTextBookmark */ = F2B2816411F54CE900870BA6 /* PBXTextBookmark */;
+			F2B52A62120ACA1100CF7EB8 /* PBXTextBookmark */ = F2B52A62120ACA1100CF7EB8 /* PBXTextBookmark */;
 			F2DBD2FB11F52C09000C61ED /* PBXBookmark */ = F2DBD2FB11F52C09000C61ED /* PBXBookmark */;
 			F2DBD2FC11F52C09000C61ED /* PBXBookmark */ = F2DBD2FC11F52C09000C61ED /* PBXBookmark */;
 			F2DBD30611F53421000C61ED /* PBXBookmark */ = F2DBD30611F53421000C61ED /* PBXBookmark */;
@@ -82,8 +84,6 @@
 			F2ED3EEA120AA12D00A0E4A7 /* PBXTextBookmark */ = F2ED3EEA120AA12D00A0E4A7 /* PBXTextBookmark */;
 			F2ED3EF0120AA21800A0E4A7 /* PBXTextBookmark */ = F2ED3EF0120AA21800A0E4A7 /* PBXTextBookmark */;
 			F2ED3F02120AA3B700A0E4A7 /* PBXTextBookmark */ = F2ED3F02120AA3B700A0E4A7 /* PBXTextBookmark */;
-			F2ED3F13120AA49800A0E4A7 /* PBXTextBookmark */ = F2ED3F13120AA49800A0E4A7 /* PBXTextBookmark */;
-			F2ED3F17120AA72B00A0E4A7 /* PBXTextBookmark */ = F2ED3F17120AA72B00A0E4A7 /* PBXTextBookmark */;
 		};
 		sourceControlManager = F2EE523B11E59E56003C2DEE /* Source Control */;
 		userBuildSettings = {
@@ -256,10 +256,9 @@
 	};
 	77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1291, 45}\";\n            s = 0;\n        },\n                {\n            r = \"{1449, 962}\";\n            s = 0;\n        },\n                {\n            r = \"{2486, 1820}\";\n            s = 0;\n        },\n                {\n            r = \"{4363, 60}\";\n            s = 0;\n        },\n                {\n            r = \"{4636, 210}\";\n            s = 0;\n        },\n                {\n            r = \"{4888, 211}\";\n            s = 0;\n        },\n                {\n            r = \"{5148, 752}\";\n            s = 0;\n        },\n                {\n            r = \"{5949, 34}\";\n            s = 0;\n        },\n                {\n            r = \"{6022, 2270}\";\n            s = 0;\n        },\n                {\n            r = \"{8313, 4653}\";\n            s = 0;\n        },\n                {\n            r = \"{13009, 35}\";\n            s = 0;\n        },\n                {\n            r = \"{13299, 19}\";\n            s = 0;\n        },\n                {\n            r = \"{13358, 34}\";\n            s = 0;\n        },\n                {\n            r = \"{13728, 269}\";\n            s = 0;\n        },\n                {\n            r = \"{14275, 171}\";\n            s = 0;\n        },\n                {\n            r = \"{14757, 1513}\";\n            s = 0;\n        },\n                {\n            r = \"{16473, 749}\";\n            s = 0;\n        },\n                {\n            r = \"{17446, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{17727, 276}\";\n            s = 0;\n        },\n                {\n            r = \"{18280, 1800}\";\n            s = 0;\n        },\n                {\n            r = \"{20174, 173}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 20355}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {881, 1980}}";
-			sepNavSelRange = "{1634, 0}";
-			sepNavVisRange = "{1714, 288}";
+			sepNavIntBoundsRect = "{{0, 0}, {1236, 8775}}";
+			sepNavSelRange = "{15896, 0}";
+			sepNavVisRange = "{14447, 1971}";
 		};
 	};
 	8D1107260486CEB800E47090 /* Artsmesh */ = {
@@ -282,6 +281,16 @@
 			sepNavVisRange = "{1001, 1194}";
 			sepNavWindowFrame = "{{1, 4}, {1279, 774}}";
 		};
+	};
+	F2779E03120AB9AD00B5DCD5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */;
+		name = "Artsmesh_AppDelegate.m: 481";
+		rLen = 0;
+		rLoc = 17393;
+		rType = 0;
+		vrLen = 5907;
+		vrLoc = 14448;
 	};
 	F296910911E8D20D002B9019 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -390,6 +399,16 @@
 		vrLen = 817;
 		vrLoc = 200;
 	};
+	F2B52A62120ACA1100CF7EB8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */;
+		name = "Artsmesh_AppDelegate.m: 438";
+		rLen = 0;
+		rLoc = 15896;
+		rType = 0;
+		vrLen = 1971;
+		vrLoc = 14447;
+	};
 	F2DBD2FB11F52C09000C61ED /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = F2DBD2E711F52AA6000C61ED /* iChat.icns */;
@@ -467,26 +486,6 @@
 		rType = 0;
 		vrLen = 1603;
 		vrLoc = 975;
-	};
-	F2ED3F13120AA49800A0E4A7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */;
-		name = "Artsmesh_AppDelegate.m: 23";
-		rLen = 0;
-		rLoc = 640;
-		rType = 0;
-		vrLen = 5906;
-		vrLoc = 14449;
-	};
-	F2ED3F17120AA72B00A0E4A7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */;
-		name = "Artsmesh_AppDelegate.m: 481";
-		rLen = 0;
-		rLoc = 17393;
-		rType = 0;
-		vrLen = 5907;
-		vrLoc = 14448;
 	};
 	F2EE522E11E59E29003C2DEE /* Artsmesh */ = {
 		isa = PBXExecutable;

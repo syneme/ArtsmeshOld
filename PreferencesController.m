@@ -12,6 +12,7 @@
 @implementation PreferencesController
 
 
+
 /*
 - (id) initWithWindow:(NSWindow *)window {
 	
@@ -43,6 +44,35 @@
 	[super windowDidLoad];
 	
 	// Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
+
+- (void) awakeFromNib {
+//	[self.preferenceJackWebServiceAddress setStringValue:[NSUserDefaults standardUserDefaults] URLForKey:@"JackWebServiceAddress"];
+}
+
+
+#pragma mark -
+#pragma mark IBActions
+
+
+- (IBAction) setPreferenceJackWebServiceAddress:(id)sender {
+//	[[NSUserDefaults standardUserDefaults] setURL:[self.preferenceJackWebServiceAddress stringValue] forKey:@"JackWebServiceAddress"];
+}
+
+- (IBAction) setPreferenceJackIPVersion:(id)sender {
+	
+}
+
+- (IBAction) setPreferenceStatusNetWebServiceAddress:(id)sender {
+	
+}
+
+- (IBAction) setPreferenceStatusNetAccount:(id)sender {
+	
+}
+
+- (IBAction) setPreferenceStatusNetPassword:(id)sender {
+	
 }
 
 

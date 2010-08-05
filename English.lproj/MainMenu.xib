@@ -3,16 +3,8 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
 		<string key="IBDocument.SystemVersion">10F569</string>
-		<string key="IBDocument.InterfaceBuilderVersion">788</string>
+		<string key="IBDocument.InterfaceBuilderVersion">1179</string>
 		<string key="IBDocument.AppKitVersion">1038.29</string>
-		<string key="IBDocument.HIToolboxVersion">461.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">788</string>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="57"/>
-		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 		</array>
@@ -1304,7 +1296,7 @@
 									<object class="NSFont" key="NSSupport" id="267790386">
 										<string key="NSName">LucidaGrande</string>
 										<double key="NSSize">13</double>
-										<int key="NSfFlags">1044</int>
+										<int key="NSfFlags">1040</int>
 									</object>
 									<reference key="NSControlView" ref="409518547"/>
 									<int key="NSButtonFlags">-2033958657</int>
@@ -1633,10 +1625,9 @@
 					</array>
 					<array class="NSMutableArray" key="NSToolbarIBSelectableItems"/>
 				</object>
-				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
 				<string key="NSWindowContentMinSize">{213, 107}</string>
 				<object class="NSView" key="NSWindowView" id="823886803">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSSplitView" id="809963266">
@@ -1652,7 +1643,6 @@
 											<int key="NSvFlags">268</int>
 											<string key="NSFrame">{{17, 428}, {286, 17}}</string>
 											<reference key="NSSuperview" ref="555965928"/>
-											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="925999264"/>
 											<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											<bool key="NSEnabled">YES</bool>
@@ -1684,7 +1674,6 @@
 															<int key="NSvFlags">4370</int>
 															<string key="NSFrameSize">{408, 420}</string>
 															<reference key="NSSuperview" ref="908983041"/>
-															<reference key="NSWindow"/>
 															<reference key="NSNextKeyView" ref="308662645"/>
 															<int key="NSViewLayerContentsRedrawPolicy">2</int>
 															<bool key="NSEnabled">YES</bool>
@@ -1705,7 +1694,7 @@
 																		<object class="NSFont" key="NSSupport" id="26">
 																			<string key="NSName">LucidaGrande</string>
 																			<double key="NSSize">11</double>
-																			<int key="NSfFlags">3100</int>
+																			<int key="NSfFlags">3088</int>
 																		</object>
 																		<object class="NSColor" key="NSBackgroundColor" id="608224857">
 																			<int key="NSColorSpace">3</int>
@@ -1833,7 +1822,6 @@
 													</array>
 													<string key="NSFrameSize">{320, 420}</string>
 													<reference key="NSSuperview" ref="925999264"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="177765284"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<reference key="NSDocView" ref="177765284"/>
@@ -1845,7 +1833,6 @@
 													<int key="NSvFlags">-2147483392</int>
 													<string key="NSFrame">{{224, 17}, {15, 102}}</string>
 													<reference key="NSSuperview" ref="925999264"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="869616328"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<reference key="NSTarget" ref="925999264"/>
@@ -1857,7 +1844,6 @@
 													<int key="NSvFlags">-2147483392</int>
 													<string key="NSFrame">{{-100, -100}, {223, 15}}</string>
 													<reference key="NSSuperview" ref="925999264"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="908983041"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<bool key="NSEnabled">YES</bool>
@@ -1869,7 +1855,6 @@
 											</array>
 											<string key="NSFrameSize">{320, 420}</string>
 											<reference key="NSSuperview" ref="555965928"/>
-											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="908983041"/>
 											<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											<int key="NSsFlags">656</int>
@@ -1881,7 +1866,6 @@
 									</array>
 									<string key="NSFrameSize">{320, 465}</string>
 									<reference key="NSSuperview" ref="809963266"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="158374484"/>
 									<bool key="NSViewIsLayerTreeHost">YES</bool>
 									<int key="NSViewLayerContentsRedrawPolicy">2</int>
@@ -1904,7 +1888,6 @@
 															<int key="NSvFlags">282</int>
 															<string key="NSFrameSize">{579, 420}</string>
 															<reference key="NSSuperview" ref="610902498"/>
-															<reference key="NSWindow"/>
 															<reference key="NSNextKeyView" ref="1032387919"/>
 															<int key="NSViewLayerContentsRedrawPolicy">2</int>
 															<string key="NSMinGridSize">{0, 0}</string>
@@ -1920,7 +1903,6 @@
 													</array>
 													<string key="NSFrameSize">{579, 420}</string>
 													<reference key="NSSuperview" ref="1000050522"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="119269573"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<reference key="NSDocView" ref="119269573"/>
@@ -1932,7 +1914,6 @@
 													<int key="NSvFlags">-2147483392</int>
 													<string key="NSFrame">{{-100, -100}, {15, 143}}</string>
 													<reference key="NSSuperview" ref="1000050522"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="865758042"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<reference key="NSTarget" ref="1000050522"/>
@@ -1945,7 +1926,6 @@
 													<int key="NSvFlags">-2147483392</int>
 													<string key="NSFrame">{{-100, -100}, {233, 15}}</string>
 													<reference key="NSSuperview" ref="1000050522"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="610902498"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<int key="NSsFlags">1</int>
@@ -1957,7 +1937,6 @@
 											</array>
 											<string key="NSFrameSize">{579, 420}</string>
 											<reference key="NSSuperview" ref="869616328"/>
-											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="610902498"/>
 											<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											<int key="NSsFlags">0</int>
@@ -1968,7 +1947,6 @@
 									</array>
 									<string key="NSFrame">{{321, 0}, {579, 465}}</string>
 									<reference key="NSSuperview" ref="809963266"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="1000050522"/>
 									<bool key="NSViewIsLayerTreeHost">YES</bool>
 									<int key="NSViewLayerContentsRedrawPolicy">2</int>
@@ -1977,7 +1955,6 @@
 							</array>
 							<string key="NSFrame">{{0, 35}, {900, 465}}</string>
 							<reference key="NSSuperview" ref="823886803"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="555965928"/>
 							<bool key="NSViewIsLayerTreeHost">YES</bool>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
@@ -1989,7 +1966,6 @@
 							<int key="NSvFlags">4130</int>
 							<string key="NSFrame">{{0, 32}, {900, 5}}</string>
 							<reference key="NSSuperview" ref="823886803"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="337881631"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<string key="NSOffsets">{0, 0}</string>
@@ -2014,7 +1990,6 @@
 							<int key="NSvFlags">260</int>
 							<string key="NSFrame">{{5, 5}, {169, 25}}</string>
 							<reference key="NSSuperview" ref="823886803"/>
-							<reference key="NSWindow"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSSegmentedCell" key="NSCell" id="540025251">
@@ -2051,15 +2026,13 @@
 						</object>
 					</array>
 					<string key="NSFrameSize">{900, 500}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="809963266"/>
 					<bool key="NSViewIsLayerTreeHost">YES</bool>
 					<int key="NSViewLayerContentsRedrawPolicy">2</int>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMinSize">{213, 184}</string>
-				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
+				<string key="NSMaxSize">{1e+13, 1e+13}</string>
 			</object>
 			<object class="NSCustomObject" id="612578685">
 				<string key="NSClassName">Artsmesh_AppDelegate</string>
@@ -2091,18 +2064,6 @@
 				<bool key="NSFilterRestrictsInsertion">YES</bool>
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
-			<object class="NSCustomObject" id="806031264">
-				<string key="NSClassName">Account</string>
-			</object>
-			<object class="NSCustomObject" id="470792951">
-				<string key="NSClassName">Contacts</string>
-			</object>
-			<object class="NSCollectionViewItem" id="51103601"/>
-			<object class="NSView" id="413339971">
-				<nil key="NSNextResponder"/>
-				<int key="NSvFlags">256</int>
-				<string key="NSFrameSize">{100, 100}</string>
-			</object>
 			<object class="NSArrayController" id="778254550">
 				<array class="NSMutableArray" key="NSDeclaredKeys">
 					<string>address</string>
@@ -2118,9 +2079,21 @@
 				<bool key="NSFilterRestrictsInsertion">YES</bool>
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
+			<object class="NSCustomObject" id="806031264">
+				<string key="NSClassName">Account</string>
+			</object>
+			<object class="NSCustomObject" id="470792951">
+				<string key="NSClassName">Contacts</string>
+			</object>
+			<object class="NSCollectionViewItem" id="51103601"/>
+			<object class="NSView" id="413339971">
+				<nil key="NSNextResponder"/>
+				<int key="NSvFlags">256</int>
+				<string key="NSFrameSize">{100, 100}</string>
+			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords">
+			<array key="connectionRecords">
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">print:</string>
@@ -4030,6 +4003,7 @@
 						<int key="objectID">569</int>
 						<reference key="object" ref="365107076"/>
 						<reference key="parent" ref="0"/>
+						<string key="objectName">Contacts Controller</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">571</int>
@@ -4359,8 +4333,6 @@
 				<string key="21.IBWindowTemplateEditedContentRect">{{182, 213}, {900, 500}}</string>
 				<integer value="1" key="21.ImportedFromIB2"/>
 				<integer value="1" key="21.NSWindowTemplate.visibleAtLaunch"/>
-				<boolean value="YES" key="21.windowTemplate.hasMinSize"/>
-				<string key="21.windowTemplate.minSize">{213, 107}</string>
 				<string key="241.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="241.ImportedFromIB2"/>
 				<string key="242.IBEditorWindowLastContentRect">{{610, 1023}, {194, 73}}</string>
@@ -4598,7 +4570,7 @@
 					<string key="superclassName">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Account.h</string>
+						<string key="minorKey">./classes-xjh84/Account.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -4616,85 +4588,17 @@
 						<string key="stopButtonClick:">id</string>
 						<string key="stopTerminalCommands:">id</string>
 					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="callTerminalCommands:">
-							<string key="name">callTerminalCommands:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="createRoom:">
-							<string key="name">createRoom:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="launchiChat:">
-							<string key="name">launchiChat:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="readyCommand:">
-							<string key="name">readyCommand:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveAction:">
-							<string key="name">saveAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setIPVersion4:">
-							<string key="name">setIPVersion4:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setIPVersion6:">
-							<string key="name">setIPVersion6:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="showPreferencesWindow:">
-							<string key="name">showPreferencesWindow:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="stopButtonClick:">
-							<string key="name">stopButtonClick:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="stopTerminalCommands:">
-							<string key="name">stopTerminalCommands:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="contactsController">NSArrayController</string>
-						<string key="contactsTable">NSTableView</string>
-						<string key="ipComboBox">NSComboBox</string>
-						<string key="readyButton">NSButton</string>
-						<string key="roomButton">NSButton</string>
-						<string key="window">NSWindow</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="contactsController">
-							<string key="name">contactsController</string>
-							<string key="candidateClassName">NSArrayController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="contactsTable">
-							<string key="name">contactsTable</string>
-							<string key="candidateClassName">NSTableView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="ipComboBox">
-							<string key="name">ipComboBox</string>
-							<string key="candidateClassName">NSComboBox</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="readyButton">
-							<string key="name">readyButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="roomButton">
-							<string key="name">roomButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="window">
-							<string key="name">window</string>
-							<string key="candidateClassName">NSWindow</string>
-						</object>
+						<string key="contactsController">id</string>
+						<string key="contactsTable">id</string>
+						<string key="ipComboBox">id</string>
+						<string key="readyButton">id</string>
+						<string key="roomButton">id</string>
+						<string key="window">id</string>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Artsmesh_AppDelegate.h</string>
+						<string key="minorKey">./classes-xjh84/Artsmesh_AppDelegate.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -4702,43 +4606,51 @@
 					<string key="superclassName">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Contacts.h</string>
-					</object>
-				</object>
-			</array>
-			<array class="NSMutableArray" key="referencedPartialClassDescriptionsV3.2+">
-				<object class="IBPartialClassDescription">
-					<string key="className">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">AddressBook.framework/Headers/ABActions.h</string>
+						<string key="minorKey">./classes-xjh84/Contacts.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">NSObject</string>
+					<string key="className">NSDocument</string>
+					<string key="superclassName">NSObject</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="printDocument:">id</string>
+						<string key="revertDocumentToSaved:">id</string>
+						<string key="runPageLayout:">id</string>
+						<string key="saveDocument:">id</string>
+						<string key="saveDocumentAs:">id</string>
+						<string key="saveDocumentTo:">id</string>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">InstantMessage.framework/Headers/IMAVManager.h</string>
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./classes-xjh84/NSDocument.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSToolbarFlexibleSpaceItem</string>
+					<string key="superclassName">NSToolbarItem</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./classes-xjh84/NSToolbarFlexibleSpaceItem.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSToolbarSpaceItem</string>
+					<string key="superclassName">NSToolbarItem</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./classes-xjh84/NSToolbarSpaceItem.h</string>
 					</object>
 				</object>
 			</array>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+		<object class="NSDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
 			<integer value="1060" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<string key="IBDocument.LastKnownRelativeProjectPath">../Artsmesh.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NSIChatTheaterTemplate">{15, 13}</string>
-			<string key="NSMenuCheckmark">{9, 8}</string>
-			<string key="NSMenuMixedState">{7, 2}</string>
-			<string key="NSRightFacingTriangleTemplate">{9, 9}</string>
-			<string key="iChat">{512, 512}</string>
-			<string key="status-away-flat-etched">{16, 16}</string>
-		</dictionary>
 	</data>
 </archive>

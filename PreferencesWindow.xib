@@ -11,7 +11,7 @@
 			<string key="NS.object.0">788</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="14"/>
+			<integer value="1"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -69,7 +69,7 @@
 								<object class="NSTabViewItem" id="913911726">
 									<string key="NSIdentifier">2</string>
 									<object class="NSView" key="NSView" id="177097347">
-										<nil key="NSNextResponder"/>
+										<reference key="NSNextResponder" ref="622510494"/>
 										<int key="NSvFlags">256</int>
 										<array class="NSMutableArray" key="NSSubviews">
 											<object class="NSTextField" id="876228163">
@@ -249,6 +249,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 											</object>
 										</array>
 										<string key="NSFrame">{{10, 33}, {696, 358}}</string>
+										<reference key="NSSuperview" ref="622510494"/>
 									</object>
 									<string key="NSLabel">Jack</string>
 									<reference key="NSColor" ref="299264723"/>
@@ -372,23 +373,22 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 								<object class="NSTabViewItem" id="107415779">
 									<string key="NSIdentifier">4</string>
 									<object class="NSView" key="NSView" id="878582948">
-										<reference key="NSNextResponder" ref="622510494"/>
+										<nil key="NSNextResponder"/>
 										<int key="NSvFlags">256</int>
 										<string key="NSFrame">{{10, 33}, {696, 358}}</string>
-										<reference key="NSSuperview" ref="622510494"/>
 									</object>
 									<string key="NSLabel">iChat</string>
 									<reference key="NSColor" ref="299264723"/>
 									<reference key="NSTabView" ref="622510494"/>
 								</object>
 							</array>
-							<reference key="NSSelectedTabViewItem" ref="107415779"/>
+							<reference key="NSSelectedTabViewItem" ref="913911726"/>
 							<reference key="NSFont" ref="585842232"/>
 							<int key="NSTvFlags">0</int>
 							<bool key="NSAllowTruncatedLabels">YES</bool>
 							<bool key="NSDrawsBackground">YES</bool>
 							<array class="NSMutableArray" key="NSSubviews">
-								<reference ref="878582948"/>
+								<reference ref="177097347"/>
 							</array>
 						</object>
 					</array>
@@ -398,6 +398,18 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
+			</object>
+			<object class="NSUserDefaultsController" id="684306784">
+				<bool key="NSAppliesImmediately">YES</bool>
+			</object>
+			<object class="NSUserDefaultsController" id="904973335">
+				<array class="NSMutableArray" key="NSDeclaredKeys">
+					<string>JackWebServiceAddress</string>
+					<string>StatusNetWebServiceAddress</string>
+					<string>StatusNetWebServiceAccount</string>
+					<string>StatusNetWebServicePassword</string>
+				</array>
+				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -417,6 +429,82 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<reference key="destination" ref="1005"/>
 					</object>
 					<int key="connectionID">21</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.JackWebServiceAddress</string>
+						<reference key="source" ref="876228163"/>
+						<reference key="destination" ref="904973335"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="876228163"/>
+							<reference key="NSDestination" ref="904973335"/>
+							<string key="NSLabel">value: values.JackWebServiceAddress</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.JackWebServiceAddress</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">48</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.StatusNetWebServiceAddress</string>
+						<reference key="source" ref="6386935"/>
+						<reference key="destination" ref="904973335"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="6386935"/>
+							<reference key="NSDestination" ref="904973335"/>
+							<string key="NSLabel">value: values.StatusNetWebServiceAddress</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.StatusNetWebServiceAddress</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSAllowsEditingMultipleValuesSelection</string>
+								<boolean value="NO" key="NS.object.0"/>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">51</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.StatusNetWebServicePassword</string>
+						<reference key="source" ref="273466316"/>
+						<reference key="destination" ref="904973335"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="273466316"/>
+							<reference key="NSDestination" ref="904973335"/>
+							<string key="NSLabel">value: values.StatusNetWebServicePassword</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.StatusNetWebServicePassword</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSAllowsEditingMultipleValuesSelection</string>
+								<boolean value="NO" key="NS.object.0"/>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">56</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.StatusNetWebServiceAccount</string>
+						<reference key="source" ref="800187801"/>
+						<reference key="destination" ref="904973335"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="800187801"/>
+							<reference key="NSDestination" ref="904973335"/>
+							<string key="NSLabel">value: values.StatusNetWebServiceAccount</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.StatusNetWebServiceAccount</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSAllowsEditingMultipleValuesSelection</string>
+								<boolean value="NO" key="NS.object.0"/>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">57</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -680,6 +768,16 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<reference key="object" ref="438508521"/>
 						<reference key="parent" ref="753692939"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">45</int>
+						<reference key="object" ref="684306784"/>
+						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">46</int>
+						<reference key="object" ref="904973335"/>
+						<reference key="parent" ref="0"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -714,12 +812,13 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				<string key="41.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="43.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="44.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="45.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">44</int>
+			<int key="maxID">57</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
