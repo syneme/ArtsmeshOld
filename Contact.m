@@ -1,1 +1,0 @@
-/* Contact.m  Version:0.1 Created by WANG Hailei on 7/10/10. */#import "Contact.h"@implementation Contact@synthesize screenName;@synthesize status;@synthesize capabilities;@synthesize ipAddress;@end
