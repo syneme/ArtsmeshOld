@@ -1,0 +1,1 @@
+/* Contacts.m  Version:0.1 Created by WANG Hailei on 7/10/10. */#import "ArtsmeshContacts.h"@implementation ArtsmeshContacts@synthesize artsmeshContacts;-(void) refreshArtsmeshContacts{	NSString *myUserName=[PreferencesHelper statusNetUserName];		if(myUserName!=nil)	{				self.artsmeshContacts = [ArtsmeshUser getFriendsWithStatus:myUserName];	}	}@end

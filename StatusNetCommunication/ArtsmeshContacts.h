@@ -1,0 +1,1 @@
+/* Contacts.h  Representing the Model of the contacts get from iChat XMPP service's artsmesh group.  Version:0.1 Created by WANG Hailei on 7/10/10. */#import <Cocoa/Cocoa.h>#import "PreferencesHelper.h"#import "ArtsmeshUser.h"@interface ArtsmeshContacts : NSObject@property (retain) NSArray * artsmeshContacts;-(void) refreshArtsmeshContacts;@end
