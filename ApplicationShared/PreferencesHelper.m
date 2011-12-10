@@ -22,10 +22,15 @@
 													   @"http://syneme.ucalgary.ca:8085", kJackWebServiceAddress,
 													   @"IPv4", kIPAddressVersion, 
 													   @"http://syneme.ucalgary.ca:8080/index.php", kStatusNetWebServiceAddress,
+                                                       @"coreaudio", kJackDriver,
 													   @"Built-in Microphone", kJackServerInputDevice,
 													   @"Built-in Output", kJackServerOutputDevice,
 													   @"44100", kJackServerSampleRate,
 													   @"512", kJackServerBufferSize,
+                                                       [NSNumber numberWithInteger:0], kJackServerHogMode,
+                                                       [NSNumber numberWithInteger:0], kJackServerClockDriftCompensation,
+                                                       [NSNumber numberWithInteger:0], kJackServerSystemPortMonitoring,
+                                                       [NSNumber numberWithInteger:0], kJackServerActivateMIDI,
 													   @"2", kJackServerInterfaceInputChannels,
 													   @"2", kJackServerInterfaceOutputChannels,
 													   nil];
@@ -91,6 +96,10 @@ BOOL stringIsEmptyOrNil(NSString *str){
 }
 
 #pragma mark -
++(NSString*) jackDriver {
+    return [[[NSUserDefaults standardUserDefaults] stringForKey:kJackDriver] autorelease];	
+}
+
 + (NSString *) jackServerInputDevice {
 	return [[[NSUserDefaults standardUserDefaults] stringForKey:kJackServerInputDevice] autorelease];	
 }
@@ -105,6 +114,21 @@ BOOL stringIsEmptyOrNil(NSString *str){
 
 + (NSString *) jackServerBufferSize {
 	return [[[NSUserDefaults standardUserDefaults] stringForKey:kJackServerBufferSize] autorelease];	
+}
+
++ (NSInteger) jackServerHogMode{
+    return [[[NSUserDefaults standardUserDefaults] valueForKey: kJackServerHogMode] integerValue];
+}
+
++ (NSInteger) jackServerClockDriftCompensation{
+    return [[[NSUserDefaults standardUserDefaults] valueForKey: kJackServerClockDriftCompensation] integerValue];
+}
+
++ (NSInteger) jackServerSystemPortMonitoring{
+    return [[[NSUserDefaults standardUserDefaults] valueForKey: kJackServerSystemPortMonitoring] integerValue];
+}
++ (NSInteger) jackServerActivateMIDI{
+    return [[[NSUserDefaults standardUserDefaults] valueForKey: kJackServerActivateMIDI] integerValue];
 }
 
 + (NSString *) jackServerInterfaceInputChannels {

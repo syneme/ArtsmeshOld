@@ -11,6 +11,19 @@
 
 @implementation ArtsmeshUser
 
+static NSString * xslTemplate = nil;
+
++(void) initialize
+{
+	if (xslTemplate==nil) {
+        NSString * path = [[NSBundle mainBundle] pathForResource:@"foaf" ofType:@"xslt"]; 
+        NSError *error;
+        xslTemplate = [NSString stringWithContentsOfFile:path 
+                                                encoding:NSUTF8StringEncoding 
+                                                   error:&error];
+	}
+}
+
 - (id)init {
     if ((self = [super init])) {
         // Initialization code here.
@@ -130,6 +143,40 @@
     [xmlDocument release];
 	return [messageInfo autorelease];
 }
+
++(NSString *) getFriendsHTML:(NSString *)userName{
+    NSString * data = [HttpRequestHelper sendGETRequest:[ArtsmeshUser getFriendsUrl:userName]];
+
+	if(data == nil){
+        [data release];
+        return nil;
+    }
+    
+    NSError * err = nil;
+    NSXMLDocument * xmlDocument = [[NSXMLDocument alloc] initWithXMLString:data 
+                                                                   options:NSXMLDocumentTidyHTML 
+                                                                     error:&err];
+
+    [xmlDocument autorelease];
+	[data release];
+    
+    if(err != nil){
+		return nil;
+	}
+
+    
+    NSXMLDocument * transformedData = (NSXMLDocument *)[xmlDocument
+                                                       objectByApplyingXSLTString:xslTemplate
+                                                       arguments:nil  // no extra XSLT parameters needed
+                                                       error:&err];
+    
+	if(err != nil){
+		return nil;
+	}
+    
+	return [transformedData XMLString];
+}
+
 +(NSArray *) getFriends:(NSString *)userName{
     NSString * data = [HttpRequestHelper sendGETRequest:[ArtsmeshUser getFriendsUrl:userName]];
     NSMutableArray * friends = [[NSMutableArray alloc] init];

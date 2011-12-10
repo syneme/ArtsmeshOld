@@ -14,6 +14,10 @@
 	NSString *outputDevice;
 	NSString *sampleRate;
 	NSString *bufferSize;
+    NSInteger hogMode;
+    NSInteger clockDriftCompensation;
+    NSInteger systemPortMonitoring;
+    NSInteger activateMIDI;
 	NSString *interfaceInputChannels;
 	NSString *interfaceOutputChanels;
 }
@@ -22,6 +26,10 @@
 @property (copy) NSString *outputDevice;
 @property (copy) NSString *sampleRate;
 @property (copy) NSString *bufferSize;
+@property (assign) NSInteger hogMode;
+@property (assign) NSInteger clockDriftCompensation;
+@property (assign) NSInteger systemPortMonitoring;
+@property (assign) NSInteger activateMIDI;
 @property (copy) NSString *interfaceInputChannels;
 @property (copy) NSString *interfaceOutputChanels;
 

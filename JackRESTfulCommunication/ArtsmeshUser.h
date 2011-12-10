@@ -41,6 +41,7 @@
 +(NSString *) getAllLogonUrl;
 +(id) login:(NSString *) userName;
 +(JackRESTMessage *) logout:(NSString *) userName;
++(NSString *) getFriendsHTML:(NSString *)userName;
 +(NSArray *) getFriends:(NSString *)userName;
 +(NSArray *) getFriendsWithStatus:(NSString *)userName;
 +(BOOL) hasLogon:(NSString *) userName;

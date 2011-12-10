@@ -17,7 +17,7 @@
 
 -(void) appendOutputTextLine:(NSString*)textLine
 {
-	[self appendOutputText:[NSString stringWithFormat:@"%@ > %@\r",[[NSDate date] description],textLine]];
+	[self appendOutputText:[NSString stringWithFormat:@"  %@ > %@\r",[[NSDate date] description],textLine]];
 }
 
 -(void) appendOutputText:(NSString*)text
@@ -37,6 +37,12 @@
     range = NSMakeRange ([[outputTextView string] length], 0);
 	
     [outputTextView scrollRangeToVisible: range];
+    
+    NSColor * color = [NSColor colorWithDeviceRed:0.65 green:0.82 blue:0.86 alpha: 1.0];
+    [outputTextView setTextColor:color];
+    
+    NSFont * font = [NSFont fontWithName:@"Consolas" size: 12];
+    [outputTextView setFont:font];
 }
 
 #pragma mark -
@@ -276,6 +282,10 @@
 	}
 }
 
+#pragma mark -
+#pragma mark Split View
+//@synthesize splitView;
+
 
 #pragma mark -
 #pragma mark View Switch
@@ -401,6 +411,18 @@
 						 ];
 	
 	[ChatTaskHelper startChat:buddyList chatType:chatType];
+}
+
+#pragma mark -
+#pragma mark Jack Pilot actions
+
+- (IBAction) launchJackPilot:(id)sender{
+    NSTask *task=[[NSTask alloc] init];
+	
+	[task setLaunchPath:@"/Applications/Jack/JackPilot.app/Contents/MacOS/JackPilot"];
+    
+	[task launch];
+	[task release];
 }
 
 
@@ -531,7 +553,7 @@
 }
 
 -(void) checkInvitationStatus:(id)data{
-	[self appendOutputTextLine:@"Checking room invitation from sever..."];
+	[self appendOutputTextLine:@"Checking room invitation from server..."];
 	
 	JackRESTRoom *room = [JackRESTRoom getRoom:[PreferencesHelper statusNetUserName]];
 	JackRESTArtist *artist=[JackRESTArtist getArtist:[PreferencesHelper statusNetUserName]];
@@ -549,6 +571,13 @@
 
 #pragma mark -
 #pragma mark FOAF
+- (void) showFOAFWindow:(NSString*)name
+{
+    FOAFInformationWindowController * controller = [[FOAFInformationWindowController alloc] init];
+    [controller showWindowWithFriendName:name];
+    [controller autorelease];
+	//[[FOAFInformationWindowController sharedInstance] showWindowWithFriendName:name];
+}
 
 - (void) showFOAFInformation
 {
@@ -560,14 +589,12 @@
 	}
 	
 	if (name!=nil) {
-		[self performSelectorInBackground:@selector(showFOAFWindow:) withObject:name];
+        [self showFOAFWindow: name];
+		//[self performSelectorInBackground:@selector(showFOAFWindow:) withObject:name];
 	}
 }
 
-- (void) showFOAFWindow:(NSString*)name
-{
-	[[FOAFInformationWindowController sharedInstance] showWindowWithFriendName:name];
-}
+
 
 #pragma mark -
 #pragma mark OSCGroupClient
@@ -587,6 +614,9 @@
 -(void)awakeFromNib
 {
 	[self.loadingProgressIndicator startAnimation:self.loadingWindow];
+    
+    [self appendOutputText:@"\r"];
+    
 }
 
 - (void)doNothingAlertDidEnd:(NSAlert *)alert 

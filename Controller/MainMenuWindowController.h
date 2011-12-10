@@ -82,6 +82,10 @@ typedef enum _BackgroundWorkingTimer
 -(void) getClientChanelList:(NSTimer*)timer;
 
 #pragma mark -
+#pragma mark Split View
+//@property (assign) IBOutlet NSSplitView * splitView;
+
+#pragma mark -
 #pragma mark View Switch
 @property (assign) IBOutlet NSSegmentedControl * mainViewSwitcher;
 @property (assign) IBOutlet NSTabView * mainView;
@@ -107,6 +111,10 @@ typedef enum _BackgroundWorkingTimer
 
 -(IBAction) startiChatChatFromMenu:(id)sender;
 -(void) startiChatWithChatType:(ChatType)chatType;
+
+#pragma mark -
+#pragma mark Jack Pilot actions
+- (IBAction) launchJackPilot:(id)sender;
 
 #pragma mark -
 #pragma mark Status.net timeline

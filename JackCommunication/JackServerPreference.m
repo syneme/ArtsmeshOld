@@ -15,6 +15,10 @@
 @synthesize outputDevice;
 @synthesize sampleRate;
 @synthesize bufferSize;
+@synthesize hogMode;
+@synthesize clockDriftCompensation;
+@synthesize systemPortMonitoring;
+@synthesize activateMIDI;
 @synthesize interfaceInputChannels;
 @synthesize interfaceOutputChanels;
 
