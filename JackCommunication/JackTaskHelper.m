@@ -158,7 +158,7 @@
 						  @"-V",	// flag for IPv6 verson
   						  @"-s",
 						  @"--clientname",
-						  [NSString stringWithFormat:@"Server_%d",chanel.port],
+						  chanel.clientName,
 						  @"-o",
 						  [portOffset stringValue],
 						  nil];
@@ -171,7 +171,7 @@
 					args=[NSArray arrayWithObjects:	
 						 @"-s",
 						 @"--clientname",
-						 [NSString stringWithFormat:@"Server_%d",chanel.port],
+						 chanel.clientName,
 						 @"-o",
 						 [portOffset stringValue],
 						 nil];
@@ -188,7 +188,7 @@
 						  @"-c",
 						  chanel.ipAddress,
 						  @"--clientname",
-						  [NSString stringWithFormat:@"Client_%@_%d", chanel.clientName,chanel.port],
+						  chanel.clientName,
 						  @"-o",
 						  [portOffset stringValue],
 						  nil];
@@ -201,7 +201,7 @@
 						  @"-c",
 						  chanel.ipAddress,
 						  @"--clientname",
-						  [NSString stringWithFormat:@"Client_%@_%d", chanel.clientName,chanel.port],
+						  chanel.clientName,
 						  @"-o",
 						  [portOffset stringValue],
 						  nil];
