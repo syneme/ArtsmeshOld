@@ -188,7 +188,7 @@
 	
 	if (message ==nil) {
 		
-		if ([jackTripChanelList count]>0) {
+//		if ([jackTripChanelList count]>0) {
 			
 			// Stop timer
 			[self appendOutputTextLine:@"Got the Jack Trip server chanel list from server succesfully."];
@@ -218,10 +218,10 @@
 			
 			// Begin to get client chanel list
 			[self startGetClientChanelListTimer:nil];
-		}
-		else {
-			[self appendOutputTextLine:@"There is NO artists in the room. Please click the STOP button."];
-		}
+//		}
+//		else {
+//			[self appendOutputTextLine:@"There is NO artists in the room. Please click the STOP button."];
+//		}
 	}
 	else {
 		// Next loop
@@ -323,12 +323,12 @@
 -(NSArray*) selectedParticipatedArtistNames{
 	NSMutableArray *names=[NSMutableArray arrayWithCapacity:[[self.statusNetContactsController selectedObjects] count]];
 	
+    [names addObject:[PreferencesHelper statusNetUserName]];
+    
 	for (id anArtistInfo in [self.statusNetContactsController selectedObjects] ) {
 		NSString *name=[anArtistInfo name]; 
 		[names addObject:name];
-	}
-	
-	[names addObject:[PreferencesHelper statusNetUserName]];
+	}	
 	
 	return [(NSArray*)names autorelease];
 }
