@@ -10,10 +10,10 @@
 #import "ArtsmeshConstDefinition.h"
 
 @interface PreferencesHelper : NSObject {
-
+    
 }
 
-+ (void) initialize;
++(void) initialize;
 +(void) loadDefaultPreferences;
 +(BOOL) checkAllRequiredPreferences:(NSString**)errorMessage;
 

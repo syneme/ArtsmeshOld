@@ -15,31 +15,22 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
     }
-    
     return self;
 }
 
 -(void) awakeFromNib{
-    //NSString *path = [[NSBundle mainBundle]  pathForImageResource: @"MainBackgroundPattern"];
-    //NSImage *pattern = [[NSImage alloc] initByReferencingFile: path];
-    //mBackgroundColor = [[NSColor colorWithPatternImage: [pattern autorelease]] retain];
-//    mBackgroundColor = [NSColor colorWithCalibratedRed:0.1 green:0.1 blue:0.1 alpha:1.0];
     mBackgroundColor=NSColor.whiteColor;
 }
 
 - (void)dealloc
 {
     [mBackgroundColor release];
-    
     [super dealloc];
 }
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    // Drawing code here.
-    
     [mBackgroundColor set];
     [NSBezierPath fillRect:dirtyRect];
     

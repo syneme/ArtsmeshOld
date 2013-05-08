@@ -77,7 +77,6 @@
 }
 -(void) setArtistsArray:(NSArray *) value{
     artists = [[value valueForKey:@"description"] componentsJoinedByString:@","];
-    //NSLog(@"%@",artists);
 }
 
 +(NSString *) getHostUrl{

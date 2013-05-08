@@ -525,7 +525,7 @@
 	
 	[self.invitationMessageTextField  setStringValue:message];
 	
-	// Make invitation window always in front, but not modal.
+	//Note: Make invitation window always in front, but not modal.
 	[self.invitationProgressIndicator startAnimation:self];
 	[self.invitationWindow makeKeyAndOrderFront:self];
 	[self.invitationWindow setHidesOnDeactivate:NO];
@@ -576,7 +576,6 @@
     FOAFInformationWindowController * controller = [[FOAFInformationWindowController alloc] init];
     [controller showWindowWithFriendName:name];
     [controller autorelease];
-	//[[FOAFInformationWindowController sharedInstance] showWindowWithFriendName:name];
 }
 
 - (void) showFOAFInformation
@@ -590,7 +589,6 @@
 	
 	if (name!=nil) {
         [self showFOAFWindow: name];
-		//[self performSelectorInBackground:@selector(showFOAFWindow:) withObject:name];
 	}
 }
 
