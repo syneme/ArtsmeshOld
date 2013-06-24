@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
+		37CC7675176FF659006C3DBE /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CC7674176FF659006C3DBE /* CoreServices.framework */; };
+		37CC7677176FF690006C3DBE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CC7676176FF690006C3DBE /* SystemConfiguration.framework */; };
+		37CC7679176FF69A006C3DBE /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CC7678176FF69A006C3DBE /* libz.1.2.5.dylib */; };
+		37CC767B176FF6A7006C3DBE /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CC767A176FF6A7006C3DBE /* ScriptingBridge.framework */; };
+		37CC767D176FF6AD006C3DBE /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CC767C176FF6AD006C3DBE /* CoreAudio.framework */; };
+		37CC767F176FF6B4006C3DBE /* InstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CC767E176FF6B4006C3DBE /* InstantMessage.framework */; };
 		77C8280E06725ACE000B614F /* Artsmesh_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -35,17 +41,11 @@
 		9D32D6C812260876003842EF /* StatusNetTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6C312260876003842EF /* StatusNetTimeline.m */; };
 		9D32D6C912260876003842EF /* StatusNetUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6C512260876003842EF /* StatusNetUser.m */; };
 		9D32D6CD12260884003842EF /* OSCGroupTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6CC12260884003842EF /* OSCGroupTaskHelper.m */; };
-		9D3D070611F9D35900913793 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070511F9D35900913793 /* CoreServices.framework */; };
-		9D3D070A11F9D36C00913793 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070911F9D36C00913793 /* SystemConfiguration.framework */; };
-		9D3D070C11F9D37300913793 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3D070B11F9D37300913793 /* libz.1.2.3.dylib */; };
 		9D5632BD120FA38E0069CF7B /* JackServerPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5632B6120FA38E0069CF7B /* JackServerPreference.m */; };
 		9D5632BF120FA38E0069CF7B /* JackTaskContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5632BA120FA38E0069CF7B /* JackTaskContainer.m */; };
 		9D5632C0120FA38E0069CF7B /* JackTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5632BC120FA38E0069CF7B /* JackTaskHelper.m */; };
 		9D5632CE120FA4D30069CF7B /* ChatTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5632CD120FA4D30069CF7B /* ChatTaskHelper.m */; };
 		9D563372120FA9AE0069CF7B /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D563370120FA9AE0069CF7B /* PreferencesWindow.xib */; };
-		9D8559231216B0370022C262 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8559221216B0370022C262 /* ScriptingBridge.framework */; };
-		9D85592F1216B0B10022C262 /* InstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D85592E1216B0B10022C262 /* InstantMessage.framework */; };
-		9DB7A6521223B12000F84459 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB7A6511223B12000F84459 /* CoreAudio.framework */; };
 		9DC3D6B012116F01002FAE24 /* JackRESTArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3D6A712116F01002FAE24 /* JackRESTArtist.m */; };
 		9DC3D6B112116F01002FAE24 /* JackRESTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3D6A912116F01002FAE24 /* JackRESTMessage.m */; };
 		9DC3D6B212116F01002FAE24 /* JackRESTRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC3D6AB12116F01002FAE24 /* JackRESTRoom.m */; };
@@ -70,6 +70,12 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Artsmesh_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artsmesh_Prefix.pch; sourceTree = "<group>"; };
+		37CC7674176FF659006C3DBE /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		37CC7676176FF690006C3DBE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		37CC7678176FF69A006C3DBE /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libz.1.2.5.dylib; sourceTree = DEVELOPER_DIR; };
+		37CC767A176FF6A7006C3DBE /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ScriptingBridge.framework; sourceTree = DEVELOPER_DIR; };
+		37CC767C176FF6AD006C3DBE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		37CC767E176FF6B4006C3DBE /* InstantMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstantMessage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/InstantMessage.framework; sourceTree = DEVELOPER_DIR; };
 		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		77C8280B06725ACE000B614F /* Artsmesh_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artsmesh_AppDelegate.h; sourceTree = "<group>"; };
 		77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artsmesh_AppDelegate.m; sourceTree = "<group>"; };
@@ -166,13 +172,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CC767F176FF6B4006C3DBE /* InstantMessage.framework in Frameworks */,
+				37CC767D176FF6AD006C3DBE /* CoreAudio.framework in Frameworks */,
+				37CC767B176FF6A7006C3DBE /* ScriptingBridge.framework in Frameworks */,
+				37CC7679176FF69A006C3DBE /* libz.1.2.5.dylib in Frameworks */,
+				37CC7677176FF690006C3DBE /* SystemConfiguration.framework in Frameworks */,
+				37CC7675176FF659006C3DBE /* CoreServices.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				9D3D070611F9D35900913793 /* CoreServices.framework in Frameworks */,
-				9D3D070A11F9D36C00913793 /* SystemConfiguration.framework in Frameworks */,
-				9D3D070C11F9D37300913793 /* libz.1.2.3.dylib in Frameworks */,
-				9D8559231216B0370022C262 /* ScriptingBridge.framework in Frameworks */,
-				9D85592F1216B0B10022C262 /* InstantMessage.framework in Frameworks */,
-				9DB7A6521223B12000F84459 /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,12 @@
 		29B97314FDCFA39411CA2CEA /* Artsmesh */ = {
 			isa = PBXGroup;
 			children = (
+				37CC767E176FF6B4006C3DBE /* InstantMessage.framework */,
+				37CC767C176FF6AD006C3DBE /* CoreAudio.framework */,
+				37CC767A176FF6A7006C3DBE /* ScriptingBridge.framework */,
+				37CC7678176FF69A006C3DBE /* libz.1.2.5.dylib */,
+				37CC7676176FF690006C3DBE /* SystemConfiguration.framework */,
+				37CC7674176FF659006C3DBE /* CoreServices.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -462,6 +474,7 @@
 			isa = PBXProject;
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Artsmesh" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
@@ -577,6 +590,7 @@
 				INFOPLIST_FILE = "Artsmesh-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Artsmesh;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -595,6 +609,7 @@
 				INFOPLIST_FILE = "Artsmesh-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Artsmesh;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
