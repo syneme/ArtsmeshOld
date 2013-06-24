@@ -44,7 +44,7 @@
 +(NSString *) getFriendsHTML:(NSString *)userName;
 +(NSArray *) getFriends:(NSString *)userName;
 +(NSArray *) getFriendsWithStatus:(NSString *)userName;
-+(BOOL) hasLogon:(NSString *) userName;
+//+(BOOL) hasLogon:(NSString *) userName;
 +(NSDictionary *) allLogon;
 
 @end
