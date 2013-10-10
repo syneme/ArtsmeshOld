@@ -25,8 +25,6 @@
 
 #pragma mark -
 #pragma mark POST
-+(NSString*) sendPOSTRequest:(NSString*)postDataArray 
-	       postDataArray:(NSArray*)postData;
 
 +(NSString*) sendPOSTRequest:(NSString*)baseURLString 
 	       postDataArray:(NSArray*)postDataArray 

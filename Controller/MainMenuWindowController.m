@@ -69,7 +69,7 @@
 
 #pragma mark -
 @synthesize playInstrumentButton;
-@synthesize stopInsrumentButton;
+@synthesize stopInstrumentButton;
 
 
 - (IBAction) playInstrument:(id)sender {
@@ -94,7 +94,7 @@
 	if(ableToPlay)
 	{
 		[playInstrumentButton setEnabled:NO];
-		[stopInsrumentButton setEnabled:YES];
+		[stopInstrumentButton setEnabled:YES];
 		
 		[self stopBackgroundWorkingTimer];
 		
@@ -112,7 +112,7 @@
 	
 	[self.currentUserStatusTextField setStringValue:@""];
 	[playInstrumentButton setEnabled:YES];
-	[stopInsrumentButton setEnabled:NO];
+	[stopInstrumentButton setEnabled:NO];
 }
 
 @synthesize backgroundWorkingTimer;
@@ -342,13 +342,6 @@
     self.statusNetUserRefreshTimer = timer;
 }
 
--(void) stopStatusNetUserRefreshTimer{
-	if (statusNetUserRefreshTimer!=nil) {
-		[statusNetUserRefreshTimer invalidate];
-	}
-	self.statusNetUserRefreshTimer=nil;
-}
-
 -(void) refreshContactsTableViewWithTimer:(NSTimer*)timer{
 	[self performSelectorInBackground:@selector(refreshContactsTableView:)  withObject:[timer userInfo]];
 }
@@ -461,14 +454,6 @@
     self.statusTimelineRefreshTimer = timer;
 }
 
--(void) stopStatusNetTimelineRefreshTimer
-{
-	if (statusTimelineRefreshTimer!=nil) {
-		[statusTimelineRefreshTimer invalidate];
-	}
-	self.statusTimelineRefreshTimer=nil;
-}
-
 -(void) refreshStatusNetTimelineTableViewWithTimer:(NSTimer*)timer
 {
 	[self performSelectorInBackground:@selector(refreshStatusNetTimelineTableView:)  withObject:[timer userInfo]];
@@ -498,7 +483,7 @@
 	[self closeInvitationWindow];
 	
 	[playInstrumentButton setEnabled:NO];
-	[stopInsrumentButton setEnabled:YES];
+	[stopInstrumentButton setEnabled:YES];
 	
 	// Get ready
 	NSInvocationOperation* getReadyTask=[[[NSInvocationOperation alloc] 

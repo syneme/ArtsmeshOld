@@ -65,7 +65,7 @@ typedef enum _BackgroundWorkingTimer {
 #pragma mark -
 
 @property(assign) IBOutlet NSButton *playInstrumentButton;
-@property(assign) IBOutlet NSButton *stopInsrumentButton;
+@property(assign) IBOutlet NSButton *stopInstrumentButton;
 
 - (IBAction)playInstrument:(id)sender;
 
@@ -112,8 +112,6 @@ typedef enum _BackgroundWorkingTimer {
 
 - (void)startStatusNetUserRefreshTimer:(id)data;
 
-- (void)stopStatusNetUserRefreshTimer;
-
 - (void)refreshContactsTableViewWithTimer:(NSTimer *)timer;
 
 - (void)refreshContactsTableView:(id)data;
@@ -143,8 +141,6 @@ typedef enum _BackgroundWorkingTimer {
 - (void)sendStatusNetMessage:(id)messageData;
 
 - (void)startStatusNetTimelineRefreshTimer:(id)data;
-
-- (void)stopStatusNetTimelineRefreshTimer;
 
 - (void)refreshStatusNetTimelineTableViewWithTimer:(NSTimer *)timer;
 

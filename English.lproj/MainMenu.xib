@@ -3503,7 +3503,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">stopInsrumentButton</string>
+						<string key="label">stopInstrumentButton</string>
 						<reference key="source" ref="978350340"/>
 						<reference key="destination" ref="409518547"/>
 					</object>
@@ -5831,7 +5831,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<string key="playInstrumentButton">NSButton</string>
 						<string key="statusNetContactsController">NSArrayController</string>
 						<string key="statusNetTimeLineController">NSArrayController</string>
-						<string key="stopInsrumentButton">NSButton</string>
+						<string key="stopInstrumentButton">NSButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="currentStatusNetContacts">
@@ -5902,8 +5902,8 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<string key="name">statusNetTimeLineController</string>
 							<string key="candidateClassName">NSArrayController</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="stopInsrumentButton">
-							<string key="name">stopInsrumentButton</string>
+						<object class="IBToOneOutletInfo" key="stopInstrumentButton">
+							<string key="name">stopInstrumentButton</string>
 							<string key="candidateClassName">NSButton</string>
 						</object>
 					</dictionary>
