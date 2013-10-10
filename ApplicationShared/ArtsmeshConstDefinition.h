@@ -29,8 +29,4 @@
 
 #define kJackServerProcessName @"jackdmp"
 
-#define kStatusNetMessageSender @"StatusNetMessageSender"
-#define kStatusNetMessageContent @"StatusNetMessageContent"
-#define kStatusNetMessageDate @"StatusNetMessageDate"
-
 #define kArtsmeshiChatServiceGuid @"ArtsmeshiChatServiceGuid"

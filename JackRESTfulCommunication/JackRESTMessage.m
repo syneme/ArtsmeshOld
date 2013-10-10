@@ -13,36 +13,20 @@
 
 - (id)init {
     if ((self = [super init])) {
-        // Initialization code here.
     }
     
     return self;
 }
 
 - (void)dealloc {
-    // Clean-up code here.
-    
+    [self.contents release];
     [super dealloc];
 }
 
-@synthesize contents;
-
--(id) initContents:(NSString *) msg{
-    if ((self = [super init])) {
-        contents = msg;
-    }
-    
-    return self;
-}
 -(id) init:(NSXMLNode *) node{
     if ((self = [super init])) {
-        NSError * err = nil;
-        
-        contents = [node stringValue];
-        
-        [err release];
+        self.contents = [node stringValue];
     }
-    
     return self;
 }
 

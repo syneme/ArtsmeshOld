@@ -17,7 +17,7 @@
 }
 
 - (id) init;
-- (int)numberOfProcesses;
+
 - (void)obtainFreshProcessList;
 - (BOOL)findProcessWithName:(NSString *)procNameToSearch;
 

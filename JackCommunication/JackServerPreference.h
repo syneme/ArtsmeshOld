@@ -19,7 +19,7 @@
     NSInteger systemPortMonitoring;
     NSInteger activateMIDI;
 	NSString *interfaceInputChannels;
-	NSString *interfaceOutputChanels;
+	NSString *interfaceOutputChannels;
 }
 
 @property (copy) NSString *inputDevice;
@@ -31,7 +31,7 @@
 @property (assign) NSInteger systemPortMonitoring;
 @property (assign) NSInteger activateMIDI;
 @property (copy) NSString *interfaceInputChannels;
-@property (copy) NSString *interfaceOutputChanels;
+@property (copy) NSString *interfaceOutputChannels;
 
 
 @end

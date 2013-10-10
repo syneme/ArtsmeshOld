@@ -20,7 +20,7 @@
 @synthesize systemPortMonitoring;
 @synthesize activateMIDI;
 @synthesize interfaceInputChannels;
-@synthesize interfaceOutputChanels;
+@synthesize interfaceOutputChannels;
 
 -(void) dealloc{
 	[inputDevice release];
@@ -28,7 +28,7 @@
 	[sampleRate release];
 	[bufferSize release];
 	[interfaceInputChannels release];
-	[interfaceOutputChanels release];
+	[interfaceOutputChannels release];
 	
 	[super dealloc];
 }

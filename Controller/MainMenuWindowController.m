@@ -237,7 +237,7 @@
 													userInfo:nil
 													 repeats:YES];
     self.backgroundWorkingTimer = timer;
-	currentWorkingTimer=GetClientChanelListtimer;
+	currentWorkingTimer=GetClientChanelListTimer;
 }
 
 -(void) getClientChanelList:(NSTimer*)timer

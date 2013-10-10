@@ -41,25 +41,31 @@
 
 +(BOOL) checkAllRequiredPreferences:(NSString**)errorMessage{
 	BOOL flag=YES;
-	NSMutableString *outMessage=[[NSMutableString alloc] initWithString:@""];
+	NSMutableString *outMessage= [[[NSMutableString alloc] initWithString:@""] autorelease];
 	
-	if (!stringIsEmptyOrNil([PreferencesHelper jackWebServiceAddress])){[outMessage appendString:@"Jack web serice addres can't be empty.\r\n"];flag=NO;}
-	//if (!stringIsEmptyOrNil([PreferencesHelper ipAddressVersion])){[outMessage appendString:@"\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper statusNetUserName])){[outMessage appendString:@"StatusNet UserName can't be empty.\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper statusNetPassword])){[outMessage appendString:@"statusNet Password can't be empty.\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper statusNetWebServiceAddress])){[outMessage appendString:@"StatusNet WebService Address can't be empty.\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper jackServerInputDevice])){[outMessage appendString:@"Jack Server Input Device can't be empty.\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper jackServerOutputDevice])){[outMessage appendString:@"Jack Server Output Device can't be empty.\r\n"];flag=NO;}
-    //if (!stringIsEmptyOrNil([PreferencesHelper jackServerSampleRate])){[outMessage appendString:@"Jack Server Sample Rate can't be empty.\r\n"];flag=NO;}
-    //if (!stringIsEmptyOrNil([PreferencesHelper jackServerBufferSize])){[outMessage appendString:@"Jack Server Buffer Size can't be empty.\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper jackServerInterfaceInputChannels])){[outMessage appendString:@"Jack Server Interface Input Channels can't be empty.\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper jackServerInterfaceOutputChannels])){[outMessage appendString:@"Jack Server Interface Output Channels can't be empty.\r\n"];flag=NO;}
-    if (!stringIsEmptyOrNil([PreferencesHelper artsmeshiChatServiceGuid])){[outMessage appendString:@"iChat Service can't be empty.\r\n"];flag=NO;}
+	if (!stringIsEmptyOrNil([PreferencesHelper jackWebServiceAddress]))
+    {[outMessage appendString:@"Jack web serice addres can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper statusNetUserName]))
+    {[outMessage appendString:@"StatusNet UserName can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper statusNetPassword]))
+    {[outMessage appendString:@"statusNet Password can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper statusNetWebServiceAddress]))
+    {[outMessage appendString:@"StatusNet WebService Address can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper jackServerInputDevice]))
+    {[outMessage appendString:@"Jack Server Input Device can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper jackServerOutputDevice]))
+    {[outMessage appendString:@"Jack Server Output Device can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper jackServerInterfaceInputChannels]))
+    {[outMessage appendString:@"Jack Server Interface Input Channels can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper jackServerInterfaceOutputChannels]))
+    {[outMessage appendString:@"Jack Server Interface Output Channels can't be empty.\r\n"];flag=NO;}
+    if (!stringIsEmptyOrNil([PreferencesHelper artsmeshiChatServiceGuid]))
+    {[outMessage appendString:@"iChat Service can't be empty.\r\n"];flag=NO;}
 	
 	if (flag==NO) {
-		*errorMessage=(NSString*)outMessage;
+		*errorMessage= outMessage;
 	}
-	
+
 	return flag;
 }
 
@@ -96,9 +102,6 @@ BOOL stringIsEmptyOrNil(NSString *str){
 }
 
 #pragma mark -
-+(NSString*) jackDriver {
-    return [[[NSUserDefaults standardUserDefaults] stringForKey:kJackDriver] autorelease];	
-}
 
 + (NSString *) jackServerInputDevice {
 	return [[[NSUserDefaults standardUserDefaults] stringForKey:kJackServerInputDevice] autorelease];	

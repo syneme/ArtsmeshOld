@@ -37,24 +37,24 @@
 	 
 - (void) prepareJackServerSampleRatePreferenceOptions {
 	self.jackServerSampleRatePreferenceOptions = [NSArray arrayWithObjects:
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:44100] forKey:kJackServerSampleRate],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:48000] forKey:kJackServerSampleRate], 
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:88200] forKey:kJackServerSampleRate], 
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:96000] forKey:kJackServerSampleRate], 
-						      nil];	
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:44100] forKey:kJackServerSampleRate],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:48000] forKey:kJackServerSampleRate],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:88200] forKey:kJackServerSampleRate],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:96000] forKey:kJackServerSampleRate],
+		nil];
 }
 
 - (void) prepareJackServerBufferSizePreferenceOptions {
 	self.jackServerBufferSizePreferenceOptions = [NSArray arrayWithObjects:
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:32]   forKey:kJackServerBufferSize],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:64]   forKey:kJackServerBufferSize],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:128]  forKey:kJackServerBufferSize],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:256]  forKey:kJackServerBufferSize],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:512]  forKey:kJackServerBufferSize],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:1024] forKey:kJackServerBufferSize],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:2048] forKey:kJackServerBufferSize],
-						      [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:4096] forKey:kJackServerBufferSize],
-							  nil];
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:32]   forKey:kJackServerBufferSize],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:64]   forKey:kJackServerBufferSize],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:128]  forKey:kJackServerBufferSize],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:256]  forKey:kJackServerBufferSize],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:512]  forKey:kJackServerBufferSize],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:1024] forKey:kJackServerBufferSize],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:2048] forKey:kJackServerBufferSize],
+		[NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:4096] forKey:kJackServerBufferSize],
+		nil];
 }
 
 - (void) prepareIPAddressVersionPreferenceOptions{
@@ -66,11 +66,11 @@
 
 - (void) prepareiChatJabberAccountPreferenceOptions {
 	
-	SBElementArray * currentUseriChatServices = [[ChatTaskHelper currentiChatApplication] services];
+	SBElementArray * currentUseriChatServices = [[ChatTaskHelper currentIChatApplication] services];
 	
 	NSMutableArray * iChatJabberAccounts = [[NSMutableArray alloc] initWithCapacity:1];
 	for ( iChatService * aniChatService in currentUseriChatServices ) {
-		// Only show the Jabbser services
+		//Note: Only show the Jabber services
 		if ( aniChatService.serviceType == iChatServiceTypeJabber) {
 			[iChatJabberAccounts addObject:aniChatService];
 		}
@@ -107,7 +107,7 @@
 				deviceAddress.mElement = kAudioObjectPropertyElementMaster;
 				if (AudioObjectGetPropertyData(deviceIDs[idx], &deviceAddress, 0, NULL, &propertySize, deviceName) == noErr) {
 					// is Input device
-					UInt32 value=-1;
+					UInt32 value;
 					
 					value=GetVolumeDeviceCanBeDefaultDevice(deviceIDs[idx],true);
 					if (value==1) {
@@ -147,7 +147,6 @@ UInt32 GetVolumeDeviceCanBeDefaultDevice(AudioDeviceID inDevice, bool inIsInput)
                                                    NULL,
                                                    &theSize,
                                                    &theAnswer);
-    // handle errors
 	if (theError!=noErr) {
 		return -1;
 	}

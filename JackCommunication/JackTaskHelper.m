@@ -10,7 +10,7 @@
 
 @implementation JackTaskHelper
 
-+(NSString*) toolsDirectioryPath
++(NSString*)toolsDirectoryPath
 {
     static NSString * path = @"/usr/bin";
 
@@ -24,16 +24,16 @@
 
 +(NSString*) jacktripIPv4LaunchPath
 {
-	return [NSString stringWithFormat:@"%@/%@", 
-            [JackTaskHelper toolsDirectioryPath],
-            [JackTaskHelper jacktripIPv4CommandName]];
+	return [NSString stringWithFormat:@"%@/%@",
+                                      [JackTaskHelper toolsDirectoryPath],
+                                      [JackTaskHelper jacktripIPv4CommandName]];
 }
 
 +(NSString*) jacktripIPv6LaunchPath
 {
-	return [NSString stringWithFormat:@"%@/%@", 
-            [JackTaskHelper toolsDirectioryPath],
-            [JackTaskHelper jacktripIPv6CommandName]];
+	return [NSString stringWithFormat:@"%@/%@",
+                                      [JackTaskHelper toolsDirectoryPath],
+                                      [JackTaskHelper jacktripIPv6CommandName]];
 }
 
 +(NSString*) jacktripIPv4CommandName
@@ -62,7 +62,7 @@
                              @"-P",
                              preference.outputDevice,
                              [NSString stringWithFormat:@"-i%@",preference.interfaceInputChannels],
-                             [NSString stringWithFormat:@"-o%@",preference.interfaceOutputChanels],
+                    [NSString stringWithFormat:@"-o%@", preference.interfaceOutputChannels],
                              [NSString stringWithFormat:@"-r%@",preference.sampleRate],
                              [NSString stringWithFormat:@"-p%@",preference.bufferSize],
                              nil];
@@ -113,24 +113,6 @@
 	}
 }
 
-+(void) terminateTask :(NSTask**) task{
-	NSTask *curTask=*task;
-	if (curTask!=nil) {
-		[curTask terminate];
-	}
-}
-
-+(void) terminateTaskList:(NSArray**)taskList{
-	NSArray *curTaskList=*taskList;
-	
-	if(curTaskList!=nil){
-		NSTask *task;
-		for(task in curTaskList){
-			[JackTaskHelper terminateTask:&task];
-		}
-	}
-}
-
 
 +(NSArray*) buildJackTaskList:(NSArray*) jackChanelList
 					   isIPv6Version:(BOOL)isIPv6Version
@@ -155,7 +137,7 @@
 				if (isIPv6Version) {
 					// IPv6 version
 					args=[NSArray arrayWithObjects:	
-						  @"-V",	// flag for IPv6 verson
+						  @"-V",	// flag for IPv6 version
   						  @"-s",
 						  @"--clientname",
 						  chanel.clientName,
@@ -184,7 +166,7 @@
 				if (isIPv6Version) {
 					// IPv6 version
 					args=[NSArray arrayWithObjects:	
-						  @"-V",	// flag for IPv6 verson
+						  @"-V",	// flag for IPv6 version
 						  @"-c",
 						  chanel.ipAddress,
 						  @"--clientname",
@@ -219,7 +201,7 @@
 		}
 	}
 	
-	return (NSArray*)taskList;
+	return taskList;
 }
 
 @end

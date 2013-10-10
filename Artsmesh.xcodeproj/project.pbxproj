@@ -23,9 +23,7 @@
 		9D32D69912260851003842EF /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D69112260851003842EF /* ASIFormDataRequest.m */; };
 		9D32D69A12260851003842EF /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D69312260851003842EF /* ASIHTTPRequest.m */; };
 		9D32D69B12260851003842EF /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D69712260851003842EF /* ASIInputStream.m */; };
-		9D32D6AB1226085C003842EF /* ArtsmeshLoginStatusImagePathValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D69E1226085C003842EF /* ArtsmeshLoginStatusImagePathValueTransformer.m */; };
 		9D32D6AD1226085C003842EF /* FOAFInformationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6A21226085C003842EF /* FOAFInformationWindowController.m */; };
-		9D32D6AE1226085C003842EF /* iChatLoginStatusImagePathValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6A41226085C003842EF /* iChatLoginStatusImagePathValueTransformer.m */; };
 		9D32D6AF1226085C003842EF /* IPHostDataSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6A61226085C003842EF /* IPHostDataSourceController.m */; };
 		9D32D6B01226085C003842EF /* MainMenuWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6A81226085C003842EF /* MainMenuWindowController.m */; };
 		9D32D6B11226085C003842EF /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D32D6AA1226085C003842EF /* PreferencesWindowController.m */; };
@@ -101,12 +99,8 @@
 		9D32D69612260851003842EF /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
 		9D32D69712260851003842EF /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
 		9D32D69812260851003842EF /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		9D32D69D1226085C003842EF /* ArtsmeshLoginStatusImagePathValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsmeshLoginStatusImagePathValueTransformer.h; sourceTree = "<group>"; };
-		9D32D69E1226085C003842EF /* ArtsmeshLoginStatusImagePathValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtsmeshLoginStatusImagePathValueTransformer.m; sourceTree = "<group>"; };
 		9D32D6A11226085C003842EF /* FOAFInformationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOAFInformationWindowController.h; sourceTree = "<group>"; };
 		9D32D6A21226085C003842EF /* FOAFInformationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAFInformationWindowController.m; sourceTree = "<group>"; };
-		9D32D6A31226085C003842EF /* iChatLoginStatusImagePathValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iChatLoginStatusImagePathValueTransformer.h; sourceTree = "<group>"; };
-		9D32D6A41226085C003842EF /* iChatLoginStatusImagePathValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iChatLoginStatusImagePathValueTransformer.m; sourceTree = "<group>"; };
 		9D32D6A51226085C003842EF /* IPHostDataSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPHostDataSourceController.h; sourceTree = "<group>"; };
 		9D32D6A61226085C003842EF /* IPHostDataSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPHostDataSourceController.m; sourceTree = "<group>"; };
 		9D32D6A71226085C003842EF /* MainMenuWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuWindowController.h; sourceTree = "<group>"; };
@@ -331,12 +325,8 @@
 		9D32D69C1226085C003842EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9D32D69D1226085C003842EF /* ArtsmeshLoginStatusImagePathValueTransformer.h */,
-				9D32D69E1226085C003842EF /* ArtsmeshLoginStatusImagePathValueTransformer.m */,
 				9D32D6A11226085C003842EF /* FOAFInformationWindowController.h */,
 				9D32D6A21226085C003842EF /* FOAFInformationWindowController.m */,
-				9D32D6A31226085C003842EF /* iChatLoginStatusImagePathValueTransformer.h */,
-				9D32D6A41226085C003842EF /* iChatLoginStatusImagePathValueTransformer.m */,
 				9D32D6A51226085C003842EF /* IPHostDataSourceController.h */,
 				9D32D6A61226085C003842EF /* IPHostDataSourceController.m */,
 				9D32D6A71226085C003842EF /* MainMenuWindowController.h */,
@@ -563,9 +553,7 @@
 				9D32D69912260851003842EF /* ASIFormDataRequest.m in Sources */,
 				9D32D69A12260851003842EF /* ASIHTTPRequest.m in Sources */,
 				9D32D69B12260851003842EF /* ASIInputStream.m in Sources */,
-				9D32D6AB1226085C003842EF /* ArtsmeshLoginStatusImagePathValueTransformer.m in Sources */,
 				9D32D6AD1226085C003842EF /* FOAFInformationWindowController.m in Sources */,
-				9D32D6AE1226085C003842EF /* iChatLoginStatusImagePathValueTransformer.m in Sources */,
 				9D32D6AF1226085C003842EF /* IPHostDataSourceController.m in Sources */,
 				9D32D6B01226085C003842EF /* MainMenuWindowController.m in Sources */,
 				9D32D6B11226085C003842EF /* PreferencesWindowController.m in Sources */,
