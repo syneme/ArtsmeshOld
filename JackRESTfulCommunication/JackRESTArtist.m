@@ -13,22 +13,19 @@
 
 - (id)init {
     if ((self = [super init])) {
-        // Initialization code here.
     }
     
     return self;
 }
 
 - (void)dealloc {
-    // Clean-up code here.
-    
+
     [super dealloc];
 }
 
 @synthesize name;
 @synthesize ip;
 @synthesize roomName;
-//@synthesize index;
 @synthesize status;
 @synthesize message;
 
@@ -47,8 +44,6 @@
             ip = [element stringValue];
             element = [[node nodesForXPath:@"RoomName" error:&err] objectAtIndex:0];
             roomName = [element stringValue];
-            //element = [[node nodesForXPath:@"Index" error:&err] objectAtIndex:0];
-            //index = [element stringValue];
             element = [[node nodesForXPath:@"Status" error:&err] objectAtIndex:0];
             status = [[element stringValue] integerValue];
         }

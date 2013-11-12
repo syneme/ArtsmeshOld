@@ -13,6 +13,7 @@
 
 @interface PreferencesDataSource : NSObject
 
+@property (assign) NSArray * driverOptions;
 @property (assign) NSArray * jackServerSampleRatePreferenceOptions;
 @property (assign) NSArray * jackServerBufferSizePreferenceOptions;
 @property (assign) NSArray * ipAddressVersionPreferenceOptions;
@@ -20,6 +21,7 @@
 @property (assign) NSArray * coreAudioInputDeviceOptions;
 @property (assign) NSArray * coreAudioOutputDeviceOptions;
 
+- (void) prepareDriverOptions;
 - (void) prepareJackServerSampleRatePreferenceOptions;
 - (void) prepareJackServerBufferSizePreferenceOptions;
 - (void) prepareIPAddressVersionPreferenceOptions;

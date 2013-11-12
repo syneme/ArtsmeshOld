@@ -23,7 +23,7 @@
 +(void) launchTaskList:(NSArray**)taskList;
 +(void) terminateTaskList:(NSArray**)taskList;
 
-
++(NSString*) toolsDirectioryPath;
 +(NSString*) jackdmpLaunchPath;
 +(NSString*) jacktripIPv4LaunchPath;
 +(NSString*) jacktripIPv6LaunchPath;

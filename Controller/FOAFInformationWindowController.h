@@ -7,15 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "FOAFDataSourceController.h"
+#import <WebKit/WebKit.h>
 
-@interface FOAFInformationWindowController : NSWindowController{
+#import "ArtsmeshUser.h"
+
+@class ArtsmeshUser;
+@class WebView;
+
+@interface FOAFInformationWindowController: NSWindowController{
+    WebView * webView;
+    bool loadingBlankPage;
 }
 
-+(FOAFInformationWindowController*) sharedInstance;
-
-@property (assign) IBOutlet NSTableView * table;
-@property (assign) IBOutlet FOAFDataSourceController * dataSourceController;
+@property (assign) IBOutlet WebView * webView;
 
 - (void) showWindowWithFriendName:(NSString *)name;
 

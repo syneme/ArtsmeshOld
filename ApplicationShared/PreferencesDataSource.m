@@ -11,6 +11,7 @@
 
 @implementation PreferencesDataSource
 
+@synthesize driverOptions;
 @synthesize jackServerSampleRatePreferenceOptions;
 @synthesize jackServerBufferSizePreferenceOptions;
 @synthesize ipAddressVersionPreferenceOptions;
@@ -19,11 +20,18 @@
 @synthesize coreAudioOutputDeviceOptions;
 
 - (void) awakeFromNib {	
+    [self prepareDriverOptions];
 	[self prepareJackServerSampleRatePreferenceOptions];
 	[self prepareJackServerBufferSizePreferenceOptions];
 	[self prepareIPAddressVersionPreferenceOptions];
 	[self prepareiChatJabberAccountPreferenceOptions];
 	[self prepareCoreAudioDeviceOptions];
+}
+
+- (void) prepareDriverOptions{
+    self.driverOptions = [NSArray arrayWithObjects:
+                          [NSMutableDictionary dictionaryWithObject:@"coreaudio" forKey:kJackDriver],
+                          nil];	
 }
 
 	 

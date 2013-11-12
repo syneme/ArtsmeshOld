@@ -17,7 +17,7 @@
 
 -(void) appendOutputTextLine:(NSString*)textLine
 {
-	[self appendOutputText:[NSString stringWithFormat:@"%@ > %@\r",[[NSDate date] description],textLine]];
+	[self appendOutputText:[NSString stringWithFormat:@"  %@ > %@\r",[[NSDate date] description],textLine]];
 }
 
 -(void) appendOutputText:(NSString*)text
@@ -37,6 +37,12 @@
     range = NSMakeRange ([[outputTextView string] length], 0);
 	
     [outputTextView scrollRangeToVisible: range];
+    
+    NSColor * color = [NSColor colorWithDeviceRed:0.65 green:0.82 blue:0.86 alpha: 1.0];
+    [outputTextView setTextColor:color];
+    
+    NSFont * font = [NSFont fontWithName:@"Consolas" size: 12];
+    [outputTextView setFont:font];
 }
 
 #pragma mark -
@@ -182,7 +188,7 @@
 	
 	if (message ==nil) {
 		
-		if ([jackTripChanelList count]>0) {
+//		if ([jackTripChanelList count]>0) {
 			
 			// Stop timer
 			[self appendOutputTextLine:@"Got the Jack Trip server chanel list from server succesfully."];
@@ -212,10 +218,10 @@
 			
 			// Begin to get client chanel list
 			[self startGetClientChanelListTimer:nil];
-		}
-		else {
-			[self appendOutputTextLine:@"There is NO artists in the room. Please click the STOP button."];
-		}
+//		}
+//		else {
+//			[self appendOutputTextLine:@"There is NO artists in the room. Please click the STOP button."];
+//		}
 	}
 	else {
 		// Next loop
@@ -276,6 +282,10 @@
 	}
 }
 
+#pragma mark -
+#pragma mark Split View
+//@synthesize splitView;
+
 
 #pragma mark -
 #pragma mark View Switch
@@ -313,12 +323,12 @@
 -(NSArray*) selectedParticipatedArtistNames{
 	NSMutableArray *names=[NSMutableArray arrayWithCapacity:[[self.statusNetContactsController selectedObjects] count]];
 	
+    [names addObject:[PreferencesHelper statusNetUserName]];
+    
 	for (id anArtistInfo in [self.statusNetContactsController selectedObjects] ) {
 		NSString *name=[anArtistInfo name]; 
 		[names addObject:name];
-	}
-	
-	[names addObject:[PreferencesHelper statusNetUserName]];
+	}	
 	
 	return [(NSArray*)names autorelease];
 }
@@ -401,6 +411,18 @@
 						 ];
 	
 	[ChatTaskHelper startChat:buddyList chatType:chatType];
+}
+
+#pragma mark -
+#pragma mark Jack Pilot actions
+
+- (IBAction) launchJackPilot:(id)sender{
+    NSTask *task=[[NSTask alloc] init];
+	
+	[task setLaunchPath:@"/Applications/Jack/JackPilot.app/Contents/MacOS/JackPilot"];
+    
+	[task launch];
+	[task release];
 }
 
 
@@ -503,7 +525,7 @@
 	
 	[self.invitationMessageTextField  setStringValue:message];
 	
-	// Make invitation window always in front, but not modal.
+	//Note: Make invitation window always in front, but not modal.
 	[self.invitationProgressIndicator startAnimation:self];
 	[self.invitationWindow makeKeyAndOrderFront:self];
 	[self.invitationWindow setHidesOnDeactivate:NO];
@@ -531,7 +553,7 @@
 }
 
 -(void) checkInvitationStatus:(id)data{
-	[self appendOutputTextLine:@"Checking room invitation from sever..."];
+	[self appendOutputTextLine:@"Checking room invitation from server..."];
 	
 	JackRESTRoom *room = [JackRESTRoom getRoom:[PreferencesHelper statusNetUserName]];
 	JackRESTArtist *artist=[JackRESTArtist getArtist:[PreferencesHelper statusNetUserName]];
@@ -549,6 +571,12 @@
 
 #pragma mark -
 #pragma mark FOAF
+- (void) showFOAFWindow:(NSString*)name
+{
+    FOAFInformationWindowController * controller = [[FOAFInformationWindowController alloc] init];
+    [controller showWindowWithFriendName:name];
+    [controller autorelease];
+}
 
 - (void) showFOAFInformation
 {
@@ -560,14 +588,11 @@
 	}
 	
 	if (name!=nil) {
-		[self performSelectorInBackground:@selector(showFOAFWindow:) withObject:name];
+        [self showFOAFWindow: name];
 	}
 }
 
-- (void) showFOAFWindow:(NSString*)name
-{
-	[[FOAFInformationWindowController sharedInstance] showWindowWithFriendName:name];
-}
+
 
 #pragma mark -
 #pragma mark OSCGroupClient
@@ -587,6 +612,9 @@
 -(void)awakeFromNib
 {
 	[self.loadingProgressIndicator startAnimation:self.loadingWindow];
+    
+    [self appendOutputText:@"\r"];
+    
 }
 
 - (void)doNothingAlertDidEnd:(NSAlert *)alert 

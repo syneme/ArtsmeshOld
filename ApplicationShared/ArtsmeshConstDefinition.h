@@ -10,10 +10,15 @@
 
 #define kJackWebServiceAddress @"JackWebServiceAddress"
 
+#define kJackDriver @"JackDriver"
 #define kJackServerInputDevice @"JackServerInputDevice"
 #define kJackServerOutputDevice @"JackServerOutputDevice"
 #define kJackServerSampleRate @"JackServerSampleRate"
 #define kJackServerBufferSize @"JackServerBufferSize"
+#define kJackServerHogMode @"JackServerHogMode"
+#define kJackServerClockDriftCompensation @"JackServerClockDriftCompensation"
+#define kJackServerSystemPortMonitoring @"JackServerSystemPortMonitoring"
+#define kJackServerActivateMIDI @"JackServerActivateMIDI"
 #define kJackServerInterfaceInputChannels @"JackServerInterfaceInputChannels"
 #define kJackServerInterfaceOutputChannels @"JackServerInterfaceOutputChannels"
 

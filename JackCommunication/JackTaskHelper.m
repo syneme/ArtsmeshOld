@@ -10,6 +10,13 @@
 
 @implementation JackTaskHelper
 
++(NSString*) toolsDirectioryPath
+{
+    static NSString * path = @"/usr/bin";
+
+    return path;
+}
+
 +(NSString*) jackdmpLaunchPath
 {
 	return @"/usr/local/bin/jackdmp";
@@ -17,12 +24,16 @@
 
 +(NSString*) jacktripIPv4LaunchPath
 {
-	return [NSString stringWithFormat:@"/usr/bin/%@", [JackTaskHelper jacktripIPv4CommandName]];
+	return [NSString stringWithFormat:@"%@/%@", 
+            [JackTaskHelper toolsDirectioryPath],
+            [JackTaskHelper jacktripIPv4CommandName]];
 }
 
 +(NSString*) jacktripIPv6LaunchPath
 {
-	return [NSString stringWithFormat:@"/usr/bin/%@", [JackTaskHelper jacktripIPv6CommandName]];
+	return [NSString stringWithFormat:@"%@/%@", 
+            [JackTaskHelper toolsDirectioryPath],
+            [JackTaskHelper jacktripIPv6CommandName]];
 }
 
 +(NSString*) jacktripIPv4CommandName
@@ -41,22 +52,39 @@
 	
 	// jackdmp --realtime -d coreaudio -C "Built-in Input" -P "Built-in Output" -i2 -o2 -r44100 -p128
 	[task setLaunchPath:[JackTaskHelper jackdmpLaunchPath]];
-
-	[task setArguments:
-	 [NSArray arrayWithObjects:	
-	  @"--realtime",
-	  @"-d",
-	  @"coreaudio",
-	  @"-C",
-	  preference.inputDevice,
-	  @"-P",
-	  preference.outputDevice,
-	  [NSString stringWithFormat:@"-i%@",preference.interfaceInputChannels],
-	  [NSString stringWithFormat:@"-o%@",preference.interfaceOutputChanels],
-	  [NSString stringWithFormat:@"-r%@",preference.sampleRate],
-	  [NSString stringWithFormat:@"-p%@",preference.bufferSize],
-	  nil]];
-
+    
+    NSMutableArray * args = [NSMutableArray arrayWithObjects:
+                             @"--realtime",
+                             @"-d",
+                             @"coreaudio",
+                             @"-C",
+                             preference.inputDevice,
+                             @"-P",
+                             preference.outputDevice,
+                             [NSString stringWithFormat:@"-i%@",preference.interfaceInputChannels],
+                             [NSString stringWithFormat:@"-o%@",preference.interfaceOutputChanels],
+                             [NSString stringWithFormat:@"-r%@",preference.sampleRate],
+                             [NSString stringWithFormat:@"-p%@",preference.bufferSize],
+                             nil];
+    
+    if (preference.hogMode) {
+        [args addObject:@"-H"];
+    }
+    
+    if(preference.clockDriftCompensation){
+        [args addObject:@"-s"];
+    }
+    
+    if(preference.systemPortMonitoring){
+        [args addObject:@"-m"];
+    }
+    
+    if(preference.activateMIDI){
+        [args addObject:@"-X"];
+        [args addObject:@"coremidi"];
+    }
+    
+	[task setArguments: args];
 	
  	[JackTaskHelper launchTask:&task];
 	
@@ -130,7 +158,7 @@
 						  @"-V",	// flag for IPv6 verson
   						  @"-s",
 						  @"--clientname",
-						  [NSString stringWithFormat:@"Server_%d",chanel.port],
+						  chanel.clientName,
 						  @"-o",
 						  [portOffset stringValue],
 						  nil];
@@ -143,7 +171,7 @@
 					args=[NSArray arrayWithObjects:	
 						 @"-s",
 						 @"--clientname",
-						 [NSString stringWithFormat:@"Server_%d",chanel.port],
+						 chanel.clientName,
 						 @"-o",
 						 [portOffset stringValue],
 						 nil];
@@ -160,7 +188,7 @@
 						  @"-c",
 						  chanel.ipAddress,
 						  @"--clientname",
-						  [NSString stringWithFormat:@"Client_%@_%d", chanel.clientName,chanel.port],
+						  chanel.clientName,
 						  @"-o",
 						  [portOffset stringValue],
 						  nil];
@@ -173,7 +201,7 @@
 						  @"-c",
 						  chanel.ipAddress,
 						  @"--clientname",
-						  [NSString stringWithFormat:@"Client_%@_%d", chanel.clientName,chanel.port],
+						  chanel.clientName,
 						  @"-o",
 						  [portOffset stringValue],
 						  nil];

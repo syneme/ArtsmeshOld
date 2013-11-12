@@ -17,6 +17,8 @@
 	NSString * path=[NSString stringWithFormat:@"%@/Contents/MacOS/%@",
 					 [[[NSBundle mainBundle] bundlePath] stringByReplacingOccurrencesOfString:@"/Artsmesh.app" withString:[NSString stringWithFormat:@"/%@.app",kOSCGroupClientApplicationName]],
 					 kOSCGroupClientApplicationName];
+    
+    NSLog(@"Path: %@",path);
 	
 	return path;
 }
