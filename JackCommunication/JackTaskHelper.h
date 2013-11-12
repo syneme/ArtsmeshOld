@@ -19,10 +19,11 @@
 				isIPv6Version:(BOOL)isIPv6Version;
 
 +(void) launchTask :(NSTask**) task;
-
++(void) terminateTask :(NSTask**) task;
 +(void) launchTaskList:(NSArray**)taskList;
++(void) terminateTaskList:(NSArray**)taskList;
 
-+(NSString*)toolsDirectoryPath;
++(NSString*) toolsDirectioryPath;
 +(NSString*) jackdmpLaunchPath;
 +(NSString*) jacktripIPv4LaunchPath;
 +(NSString*) jacktripIPv6LaunchPath;

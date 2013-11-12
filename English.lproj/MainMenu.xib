@@ -3447,7 +3447,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">stopInstrument:</string>
+						<string key="label">stopInsrument:</string>
 						<reference key="source" ref="978350340"/>
 						<reference key="destination" ref="799016194"/>
 					</object>
@@ -3503,7 +3503,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">stopInstrumentButton</string>
+						<string key="label">stopInsrumentButton</string>
 						<reference key="source" ref="978350340"/>
 						<reference key="destination" ref="409518547"/>
 					</object>
@@ -3773,9 +3773,9 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="244574291"/>
 							<reference key="NSDestination" ref="21486928"/>
-							<string key="NSLabel">content: myHostIPAddressList</string>
+							<string key="NSLabel">content: myHostIPAddresseList</string>
 							<string key="NSBinding">content</string>
-							<string key="NSKeyPath">myHostIPAddressList</string>
+							<string key="NSKeyPath">myHostIPAddresseList</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
@@ -5831,7 +5831,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<string key="playInstrumentButton">NSButton</string>
 						<string key="statusNetContactsController">NSArrayController</string>
 						<string key="statusNetTimeLineController">NSArrayController</string>
-						<string key="stopInstrumentButton">NSButton</string>
+						<string key="stopInsrumentButton">NSButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="currentStatusNetContacts">
@@ -5902,8 +5902,8 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<string key="name">statusNetTimeLineController</string>
 							<string key="candidateClassName">NSArrayController</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="stopInstrumentButton">
-							<string key="name">stopInstrumentButton</string>
+						<object class="IBToOneOutletInfo" key="stopInsrumentButton">
+							<string key="name">stopInsrumentButton</string>
 							<string key="candidateClassName">NSButton</string>
 						</object>
 					</dictionary>

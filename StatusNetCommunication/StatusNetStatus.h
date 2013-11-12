@@ -29,10 +29,11 @@
 -(id) init:(NSXMLNode *) node;
 
 +(NSString *) getFriendsUrl:(NSString *)userName;
++(NSString *) getUserUrl:(NSString *)userName;
 +(NSString *) getUpdateUrl;
 +(NSArray *) getStatusNetFriendsStatuses:(NSString *)userName;
-
-+(StatusNetStatus *) setStatusNetStatus:(NSString *)status
++(NSArray *) getStatusNetStatuses:(NSString *)userName;
++(StatusNetStatus *) setStatusNetStatus:(NSString *)status 
                                    userName:(NSString *)name 
                                    password:(NSString *)pw;
 

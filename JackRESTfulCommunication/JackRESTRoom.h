@@ -13,6 +13,7 @@
 
 @interface JackRESTRoom : NSObject {
 @private
+    NSString * name;
 	NSString * artists;
     NSString * creator;
     NSString * ipVersion;

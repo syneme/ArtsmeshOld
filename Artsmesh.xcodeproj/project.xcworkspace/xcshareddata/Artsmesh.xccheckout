@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1963F9CD-9A35-4CD9-B7FF-2726CCF809DF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Artsmesh</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>00BAA28D-DC1A-4477-8A07-C376EAD09304</key>
+		<string>ssh://github.com/xujianrj/Artsmesh.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Artsmesh.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>00BAA28D-DC1A-4477-8A07-C376EAD09304</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/xujianrj/Artsmesh.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>00BAA28D-DC1A-4477-8A07-C376EAD09304</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>00BAA28D-DC1A-4477-8A07-C376EAD09304</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Artsmesh</string>
+		</dict>
+	</array>
+</dict>
+</plist>

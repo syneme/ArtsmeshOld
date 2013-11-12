@@ -11,7 +11,7 @@
 
 @implementation IPHostDataSourceController
 
-@synthesize myHostIPAddressList;
+@synthesize myHostIPAddresseList;
 @synthesize isIPv6;
 
 - (id) init {	
@@ -56,7 +56,7 @@
 	
 	[originalIpAddressList release];
 	
-	self.myHostIPAddressList =(NSArray*)retArray;
+	self.myHostIPAddresseList=(NSArray*)retArray;
 }
 
 @end

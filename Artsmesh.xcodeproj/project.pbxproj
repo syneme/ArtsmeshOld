@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
+		379431861831BF27007B13D4 /* ArtsmeshLoginStatusImagePathValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 379431831831BF27007B13D4 /* ArtsmeshLoginStatusImagePathValueTransformer.m */; };
+		379431871831BF27007B13D4 /* iChatLoginStatusImagePathValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 379431851831BF27007B13D4 /* iChatLoginStatusImagePathValueTransformer.m */; };
 		37DFDB0114930C7500A837FF /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DFDB0014930C7500A837FF /* libz.1.2.5.dylib */; };
 		37DFDB0314930E0F00A837FF /* OSCGroupIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 37DFDB0214930E0F00A837FF /* OSCGroupIcon.icns */; };
 		77C8280E06725ACE000B614F /* Artsmesh_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Artsmesh_AppDelegate.m */; };
@@ -75,6 +77,10 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Artsmesh_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artsmesh_Prefix.pch; sourceTree = "<group>"; };
+		379431821831BF27007B13D4 /* ArtsmeshLoginStatusImagePathValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsmeshLoginStatusImagePathValueTransformer.h; sourceTree = "<group>"; };
+		379431831831BF27007B13D4 /* ArtsmeshLoginStatusImagePathValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtsmeshLoginStatusImagePathValueTransformer.m; sourceTree = "<group>"; };
+		379431841831BF27007B13D4 /* iChatLoginStatusImagePathValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iChatLoginStatusImagePathValueTransformer.h; sourceTree = "<group>"; };
+		379431851831BF27007B13D4 /* iChatLoginStatusImagePathValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iChatLoginStatusImagePathValueTransformer.m; sourceTree = "<group>"; };
 		37DFDB0014930C7500A837FF /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		37DFDB0214930E0F00A837FF /* OSCGroupIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = OSCGroupIcon.icns; sourceTree = "<group>"; };
 		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -325,6 +331,10 @@
 		9D32D69C1226085C003842EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				379431821831BF27007B13D4 /* ArtsmeshLoginStatusImagePathValueTransformer.h */,
+				379431831831BF27007B13D4 /* ArtsmeshLoginStatusImagePathValueTransformer.m */,
+				379431841831BF27007B13D4 /* iChatLoginStatusImagePathValueTransformer.h */,
+				379431851831BF27007B13D4 /* iChatLoginStatusImagePathValueTransformer.m */,
 				9D32D6A11226085C003842EF /* FOAFInformationWindowController.h */,
 				9D32D6A21226085C003842EF /* FOAFInformationWindowController.m */,
 				9D32D6A51226085C003842EF /* IPHostDataSourceController.h */,
@@ -537,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379431871831BF27007B13D4 /* iChatLoginStatusImagePathValueTransformer.m in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				77C8280E06725ACE000B614F /* Artsmesh_AppDelegate.m in Sources */,
 				9D5632BD120FA38E0069CF7B /* JackServerPreference.m in Sources */,
@@ -550,6 +561,7 @@
 				9DC3D6B212116F01002FAE24 /* JackRESTRoom.m in Sources */,
 				9DC3D6B312116F01002FAE24 /* JackTripChanel.m in Sources */,
 				9DC3D6B412116F01002FAE24 /* ArtsmeshUser.m in Sources */,
+				379431861831BF27007B13D4 /* ArtsmeshLoginStatusImagePathValueTransformer.m in Sources */,
 				9D32D69912260851003842EF /* ASIFormDataRequest.m in Sources */,
 				9D32D69A12260851003842EF /* ASIHTTPRequest.m in Sources */,
 				9D32D69B12260851003842EF /* ASIInputStream.m in Sources */,

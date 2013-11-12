@@ -28,6 +28,11 @@ typedef struct kinfo_proc kinfo_proc;
     return self;
 }
 
+- (int)numberOfProcesses
+{
+    return numberOfProcesses;
+}
+
 - (void)setNumberOfProcesses:(int)num
 {
     numberOfProcesses = num;

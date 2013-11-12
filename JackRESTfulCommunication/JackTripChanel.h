@@ -13,11 +13,20 @@
 
 #define JACK_TRIP_BASE_PORT 4464
 
-@interface JackTripChanel : NSObject
+@interface JackTripChanel : NSObject {
+@private
+    NSString * clientName;
+	NSString * ipAddress;
+    NSInteger port;
+    //JackRESTMessage * message;
+}
 
 @property (retain) NSString * clientName;
 @property (retain) NSString * ipAddress;
 @property (assign) NSInteger port;
+//@property (retain) JackRESTMessage * message;
+
+-(id) init:(NSXMLNode *) node;
 
 +(NSString *) getServerScriptsUrl:(NSString *) artistName;
 +(NSString *) getClientScriptsUrl:(NSString *) artistName;

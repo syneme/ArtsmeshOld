@@ -16,6 +16,7 @@
     NSString * name;
 	NSString * ip;
     NSString * roomName;
+    //NSInteger index;
     NSInteger status;
     JackRESTMessage * message;
 }
@@ -23,6 +24,7 @@
 @property (retain) NSString * name;
 @property (retain) NSString * ip;
 @property (retain) NSString * roomName;
+//@property (assign) NSInteger index;
 @property (assign) NSInteger status;
 @property (retain) JackRESTMessage * message;
 

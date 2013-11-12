@@ -31,6 +31,7 @@ BOOL stringIsEmptyOrNil(NSString *str);
 +(NSString*) statusNetWebServiceAddress;
 
 #pragma mark -
++ (NSString *) jackDriver;
 + (NSString *) jackServerInputDevice;
 + (NSString *) jackServerOutputDevice;
 + (NSString *) jackServerSampleRate;

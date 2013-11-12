@@ -8,10 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface JackRESTMessage : NSObject
+@interface JackRESTMessage : NSObject {
+@private
+    NSString * contents;
+}
 
-@property(nonatomic, copy) NSString *contents;
+@property (retain) NSString * contents;
 
 -(id) init:(NSXMLNode *) node;
+-(id) initContents:(NSString *) msg;
 
 @end

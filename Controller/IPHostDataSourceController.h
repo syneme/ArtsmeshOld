@@ -10,11 +10,11 @@
 #import "ArtsmeshConstDefinition.h"
 
 @interface IPHostDataSourceController : NSObject {
-	NSArray *myHostIPAddressList;
+	NSArray * myHostIPAddresseList;
 	BOOL isIPv6;
 }
 
-@property (assign) NSArray *myHostIPAddressList;
+@property (assign) NSArray *myHostIPAddresseList;
 @property (assign) BOOL isIPv6;
 
 -(void) getMyHostIPAddressList;

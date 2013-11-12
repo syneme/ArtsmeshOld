@@ -45,7 +45,13 @@
 #pragma mark -
 #pragma mark POST
 
-+(NSString*) sendPOSTRequest:(NSString*)baseURLString
++(NSString*) sendPOSTRequest:(NSString*)baseURLString 
+	       postDataArray:(NSArray*)postDataArray
+{	
+	return [HttpRequestHelper sendPOSTRequest:baseURLString postDataArray:postDataArray username:nil password:nil];
+}
+
++(NSString*) sendPOSTRequest:(NSString*)baseURLString 
 	       postDataArray:(NSArray*)postDataArray 
 		    username:(NSString*)username 
 		    password:(NSString*)password

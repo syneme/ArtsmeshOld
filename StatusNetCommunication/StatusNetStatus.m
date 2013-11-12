@@ -62,7 +62,9 @@
 +(NSString *) getFriendsUrl:(NSString *)userName{
     return [[NSString stringWithFormat:@"%@/api/statuses/friends_timeline/%@.xml",[StatusNetUser getHostUrl],userName] autorelease];
 }
-
++(NSString *) getUserUrl:(NSString *)userName{
+    return [[NSString stringWithFormat:@"%@/api/statuses/user_timeline/%@.xml",[StatusNetUser getHostUrl],userName] autorelease];
+}
 +(NSString *) getUpdateUrl{
     return [[NSString stringWithFormat:@"%@/api/statuses/update.xml",[StatusNetUser getHostUrl]] autorelease];
 }
@@ -105,8 +107,46 @@
 	[xmlDocument release];
 	return (NSArray *)[statuses autorelease];
 }
-
-+(StatusNetStatus *) setStatusNetStatus:(NSString *)status
++(NSArray *) getStatusNetStatuses:(NSString *)userName{
+    NSString * data = [HttpRequestHelper sendGETRequest:[StatusNetStatus getUserUrl:userName]];
+    NSMutableArray * statuses = [[NSMutableArray alloc] init];
+	if(data == nil){
+        [data release];
+        return (NSArray *)[statuses autorelease];
+    }
+    
+    NSError * err = nil;
+	NSXMLDocument * xmlDocument = [[NSXMLDocument alloc] initWithXMLString:data 
+                                                                   options:(NSXMLNodePreserveWhitespace | NSXMLNodePreserveCDATA) 
+                                                                     error:&err];
+	[data release];
+    if(err != nil){
+		[err release];
+		[xmlDocument release];
+		return (NSArray *)[statuses autorelease];
+	}
+    NSXMLNode * node = nil;
+    NSArray * nodes = [[xmlDocument rootElement] nodesForXPath:@"status" error:&err];
+	if(err != nil){
+		[err release];
+		[node release];
+		[nodes release];
+		[xmlDocument release];
+		return (NSArray *)[statuses autorelease];
+	}
+    
+	for(node in nodes){
+        StatusNetStatus * status = [[StatusNetStatus alloc] init:node];
+        [statuses addObject:[status autorelease]];
+    }
+	
+    [err release];
+    [node release];
+    [nodes release];
+	[xmlDocument release];
+	return (NSArray *)[statuses autorelease];
+}
++(StatusNetStatus *) setStatusNetStatus:(NSString *)status 
                                    userName:(NSString *)name 
                                    password:(NSString *)pw{
     NSMutableArray * postDatas = [[NSMutableArray alloc] init];

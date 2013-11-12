@@ -11,7 +11,7 @@
 
 @interface MainBackgroundView : NSView {
 @private
-    NSColor				   *mBackgroundColor;	//Note: the background color (pattern) of the view
+    NSColor				   *mBackgroundColor;	// the background color (pattern) of the view
 }
 
 @end

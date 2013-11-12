@@ -9,16 +9,7 @@
 #import "JackTripChanel.h"
 
 
-@interface JackTripChanel ()
-- (id)init:(NSXMLNode *)node;
-@end
-
-@implementation JackTripChanel {
-@private
-    NSString *clientName;
-    NSString *ipAddress;
-    NSInteger port;
-}
+@implementation JackTripChanel
 
 - (id)init {
     if ((self = [super init])) {
@@ -29,15 +20,15 @@
 }
 
 - (void)dealloc {
-
-    [clientName release];
-    [ipAddress release];
+    // Clean-up code here.
+    
     [super dealloc];
 }
 
 @synthesize clientName;
 @synthesize ipAddress;
 @synthesize port;
+//@synthesize message;
 
 -(id) init:(NSXMLNode *) node{
     if ((self = [super init])) {
@@ -88,6 +79,7 @@
         NSArray * nodes = [[xmlDocument rootElement] nodesForXPath:@"chanel" error:&err];
         if(err != nil){
             [err release];
+            [node release];
             [xmlDocument release];
             return (NSArray *)[scripts autorelease];
         }
@@ -97,6 +89,7 @@
             [scripts addObject:[scriptInfo autorelease]];
         }
         [node release];
+        //[nodes release];
     }
 
     [err release];
@@ -130,6 +123,7 @@
         NSArray * nodes = [[xmlDocument rootElement] nodesForXPath:@"chanel" error:&err];
         if(err != nil){
             [err release];
+            [node release];
             [xmlDocument release];
             return (NSArray *)[scripts autorelease];
         }

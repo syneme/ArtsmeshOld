@@ -23,72 +23,63 @@
 
 #define kRoomName @"room1"
 
-typedef enum _BackgroundWorkingTimer {
-    NoneWorkingTimer = 0,
-    GetServerChanelListTimer = 2,
-    GetClientChanelListTimer = 3
-
+typedef enum _BackgroundWorkingTimer
+{
+	NoneWorkingTimer=0,
+	InvitationCheckTimer=1,
+	GetServerChanelListTimer=2,
+	GetClientChanelListtimer=3
+	
 } BackgroundWorkingTimer;
 
 @interface MainMenuWindowController : NSWindowController {
-    BackgroundWorkingTimer currentWorkingTimer;
-    NSTimer *backgroundWorkingTimer;
-    NSTimer *statusNetUserRefreshTimer;
-    NSTimer *statusTimelineRefreshTimer;
+	BackgroundWorkingTimer currentWorkingTimer;
+	NSTimer *	backgroundWorkingTimer;
+	NSTimer *	statusNetUserRefreshTimer;
+	NSTimer *	statusTimelineRefreshTimer;
 }
 
 #pragma mark -
 #pragma mark Console Window
-@property(assign) IBOutlet NSTextView *outputTextView;
+@property (assign) IBOutlet NSTextView *outputTextView;
 
-- (void)appendOutputText:(NSString *)text;
-
-- (void)appendOutputTextLine:(NSString *)textLine;
-
-- (void)appendOutputTextOnMainThread:(id)data;
+-(void) appendOutputText:(NSString*)text;
+-(void) appendOutputTextLine:(NSString*)textLine;
+-(void) appendOutputTextOnMainThread:(id)data;
 
 #pragma mark -
 #pragma mark Loading Window
-@property(assign) IBOutlet NSWindow *loadingWindow;
-@property(assign) IBOutlet NSProgressIndicator *loadingProgressIndicator;
+@property (assign) IBOutlet NSWindow * loadingWindow;
+@property (assign) IBOutlet NSProgressIndicator * loadingProgressIndicator;
 
 #pragma mark -
 #pragma mark Toolbar
 
-@property(assign) IBOutlet NSPopUpButton *ipAddressPopup;
-@property(retain) IBOutlet IPHostDataSourceController *ipHostDataSourceController;
-
-- (void)selectDefaultItemInIPComboBox;
-
-- (NSString *)selectedHostIPAddress;
+@property (assign) IBOutlet NSPopUpButton *ipAddressPopup;
+@property (retain) IBOutlet IPHostDataSourceController * ipHostDataSourceController;
+-(void) selectDefaultItemInIPComboBox;
+-(NSString*) selectedHostIPAddress;
 
 #pragma mark -
 
-@property(assign) IBOutlet NSButton *playInstrumentButton;
-@property(assign) IBOutlet NSButton *stopInstrumentButton;
+@property (assign) IBOutlet NSButton *playInstrumentButton;
+@property (assign) IBOutlet NSButton *stopInsrumentButton;
+- (IBAction) playInstrument:(id)sender;
+- (IBAction) stopInsrument:(id)sender;
 
-- (IBAction)playInstrument:(id)sender;
+@property (retain) NSTimer *backgroundWorkingTimer;
+@property (retain) IBOutlet JackTaskContainer * jackTaskContainer;
 
-- (IBAction)stopInstrument:(id)sender;
+-(void) stopBackgroundWorkingTimer;
+-(void) removeRoom;
+-(void) createRoom:(id)data;
+-(void) getReady:(id)data;
 
-@property(retain) NSTimer *backgroundWorkingTimer;
-@property(retain) IBOutlet JackTaskContainer *jackTaskContainer;
+-(void) startGetServerChanelListTimer:(id)data;
+-(void) getServerChanelList:(NSTimer*)timer;
 
-- (void)stopBackgroundWorkingTimer;
-
-- (void)removeRoom;
-
-- (void)createRoom:(id)data;
-
-- (void)getReady:(id)data;
-
-- (void)startGetServerChanelListTimer:(id)data;
-
-- (void)getServerChanelList:(NSTimer *)timer;
-
-- (void)startGetClientChanelListTimer:(id)data;
-
-- (void)getClientChanelList:(NSTimer *)timer;
+-(void) startGetClientChanelListTimer:(id)data;
+-(void) getClientChanelList:(NSTimer*)timer;
 
 #pragma mark -
 #pragma mark Split View
@@ -96,94 +87,81 @@ typedef enum _BackgroundWorkingTimer {
 
 #pragma mark -
 #pragma mark View Switch
-@property(assign) IBOutlet NSSegmentedControl *mainViewSwitcher;
-@property(assign) IBOutlet NSTabView *mainView;
-
-- (IBAction)switchMainViewTo:(id)sender;
+@property (assign) IBOutlet NSSegmentedControl * mainViewSwitcher;
+@property (assign) IBOutlet NSTabView * mainView;
+- (IBAction) switchMainViewTo:(id)sender; 
 
 #pragma mark -
 #pragma mark Status.net contacts panel
-@property(assign) IBOutlet NSTextField *currentUserStatusTextField;
-@property(retain) IBOutlet NSArrayController *statusNetContactsController;
-@property(assign) IBOutlet ArtsmeshContacts *currentStatusNetContacts;
-@property(retain) NSTimer *statusNetUserRefreshTimer;
+@property (assign) IBOutlet NSTextField * currentUserStatusTextField;
+@property (retain) IBOutlet NSArrayController *statusNetContactsController;
+@property (assign) IBOutlet ArtsmeshContacts *currentStatusNetContacts;
+@property (retain) NSTimer * statusNetUserRefreshTimer;
 
-- (NSArray *)selectedParticipatedArtistNames;
-
-- (void)startStatusNetUserRefreshTimer:(id)data;
-
-- (void)refreshContactsTableViewWithTimer:(NSTimer *)timer;
-
-- (void)refreshContactsTableView:(id)data;
+-(NSArray*) selectedParticipatedArtistNames;
+-(void) startStatusNetUserRefreshTimer:(id)data;
+-(void) stopStatusNetUserRefreshTimer;
+-(void) refreshContactsTableViewWithTimer:(NSTimer*)timer;
+-(void) refreshContactsTableView:(id)data;
 
 #pragma mark -
 #pragma mark iChat actions
-- (IBAction)launchiChat:(id)sender;
+- (IBAction) launchiChat:(id)sender;
+- (IBAction) iChatActionsSwitch:(id)sender;
 
-- (IBAction)iChatActionsSwitch:(id)sender;
-
-- (IBAction)startiChatChatFromMenu:(id)sender;
-
-- (void)startiChatWithChatType:(ChatType)chatType;
+-(IBAction) startiChatChatFromMenu:(id)sender;
+-(void) startiChatWithChatType:(ChatType)chatType;
 
 #pragma mark -
 #pragma mark Jack Pilot actions
-- (IBAction)launchJackPilot:(id)sender;
+- (IBAction) launchJackPilot:(id)sender;
 
 #pragma mark -
 #pragma mark Status.net timeline
-@property(retain) IBOutlet NSArrayController *statusNetTimeLineController;
-@property(assign) IBOutlet StatusNetTimeline *currentStatusNetTimeLine;
-@property(retain) NSTimer *statusTimelineRefreshTimer;
+@property (retain) IBOutlet NSArrayController *statusNetTimeLineController;
+@property (assign) IBOutlet StatusNetTimeline *currentStatusNetTimeLine;
+@property (retain) NSTimer * statusTimelineRefreshTimer;
 
-- (IBAction)postStatusNetMessage:(id)sender;
+- (IBAction) postStatusNetMessage:(id)sender;
+-(void) sendStatusNetMessage:(id)messageData;
 
-- (void)sendStatusNetMessage:(id)messageData;
-
-- (void)startStatusNetTimelineRefreshTimer:(id)data;
-
-- (void)refreshStatusNetTimelineTableViewWithTimer:(NSTimer *)timer;
-
-- (void)refreshStatusNetTimelineTableView:(id)data;
+-(void) startStatusNetTimelineRefreshTimer:(id)data;
+-(void) stopStatusNetTimelineRefreshTimer;
+-(void) refreshStatusNetTimelineTableViewWithTimer:(NSTimer*)timer;
+-(void) refreshStatusNetTimelineTableView:(id)data;
 
 
 #pragma mark -
 #pragma mark Preferences window
-- (IBAction)showPreferencesWindow:(id)sender;
+- (IBAction) showPreferencesWindow:(id)sender;
 
 
 #pragma mark -
 #pragma mark Invitation Window
-@property(assign) IBOutlet NSWindow *invitationWindow;
-@property(assign) IBOutlet NSProgressIndicator *invitationProgressIndicator;
-@property(assign) IBOutlet NSTextField *invitationMessageTextField;
+@property (assign) IBOutlet NSWindow *invitationWindow;
+@property (assign) IBOutlet NSProgressIndicator *invitationProgressIndicator;
+@property (assign) IBOutlet NSTextField * invitationMessageTextField;
 
-- (IBAction)acceptInvitation:(id)sender;
+-(IBAction) acceptInvitation:(id)sender;
+-(IBAction) rejectInvitation:(id)sender;
+- (void) closeInvitationWindow;
+- (void) showInvitationWindow:(id)data;
 
-- (IBAction)rejectInvitation:(id)sender;
-
-- (void)closeInvitationWindow;
-
-- (void)showInvitationWindow:(id)data;
-
-- (void)startInvitationCheckTimer:(id)data;
-
-- (void)checkInvitationStatusWithTimer:(NSTimer *)timer;
-
-- (void)checkInvitationStatus:(id)data;
+-(void) startInvitationCheckTimer:(id)data;
+-(void) checkInvitationStatusWithTimer:(NSTimer*)timer;
+-(void) checkInvitationStatus:(id)data;
 
 #pragma mark -
 #pragma mark FOAF
-- (void)showFOAFInformation;
+- (void) showFOAFInformation;
 
 #pragma mark -
 #pragma mark OSCGroupClient
 
-- (IBAction)launchOSCGroupClientApplication:(id)sender;
-
-- (IBAction)quitOSCGroupClientApplication:(id)sender;
+-(IBAction) launchOSCGroupClientApplication:(id)sender;
+-(IBAction) quitOSCGroupClientApplication:(id)sender;
 
 #pragma mark -
-- (BOOL)performOperation:(NSOperation *)anOp;
+- (BOOL)performOperation:(NSOperation*)anOp;
 
 @end

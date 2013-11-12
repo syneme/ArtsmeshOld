@@ -31,6 +31,9 @@
 										@"jacktrip6",
 										nil]];
 	
+	//[JackTripTaskHelper terminateTaskList:&(self->jackTripClientTaskList)];
+	//[JackTripTaskHelper terminateTaskList:&(self->jackTripServerTaskList)];
+	//[JackTripTaskHelper terminateTask:&(self->jackServerTask)];
 }
 
 -(void) dealloc{
